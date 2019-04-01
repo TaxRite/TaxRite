@@ -14,7 +14,9 @@
         <activity android:name=".EndGUI"></activity>
         <activity android:name=".FormGUI" />
         <activity android:name=".RebateGUI" />
+        <activity android:name=".TaxGUI"/>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
