@@ -72,7 +72,7 @@ Double hour,rate,overtime,taxcredit,healthinsurance,unionsubs;
                         p.setOverTime(overtime);
                         aList.add(p);
 
-                        Toast.makeText(getApplicationContext(), "the information you added is :  hours"+hour+"\n"+"rate"+rate+"\n"+"Health Insurance"+health+"\n"+"Union Subs"+union+"\n"+"Tax Credit"+taxcredit+"\n"+"Overtime"+overtime,
+                        Toast.makeText(getApplicationContext(), "the information you added are :  hours"+hour+"\n"+"rate"+rate+"\n"+"Health Insurance"+health+"\n"+"Union Subs"+union+"\n"+"Tax Credit"+taxcredit+"\n"+"Overtime"+overtime,
 
 
 
