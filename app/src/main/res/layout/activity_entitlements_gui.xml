@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".EntitlementsGUI">
 
+    <Button
+        android:id="@+id/entitelemnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="entitelement"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="298dp" />
 </android.support.constraint.ConstraintLayout>

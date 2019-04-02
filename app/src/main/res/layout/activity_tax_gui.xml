@@ -8,7 +8,8 @@
     tools:context=".TaxGUI">
 
     <TabHost
-        android:layout_width="453dp"
+        android:id="@+id/tabHost"
+        android:layout_width="0dp"
         android:layout_height="648dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -23,7 +24,8 @@
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent" />
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
@@ -95,6 +97,7 @@
                         android:ems="10"
                         android:hint="Tax Credit"
                         android:inputType="phone" />
+
                     <CheckBox
                         android:id="@+id/weekly"
                         android:layout_width="89dp"
@@ -109,6 +112,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:background="@color/colorAccent"
+                        android:baselineAligned="false"
                         android:text="monthly" />
 
                     <CheckBox
@@ -126,11 +130,6 @@
                         android:layout_height="36dp"
                         android:background="@android:color/darker_gray"
                         android:text="Calculate" />
-
-                    <View
-                        android:id="@+id/view"
-                        android:layout_width="294dp"
-                        android:layout_height="88dp" />
 
                     <Button
                         android:id="@+id/help"

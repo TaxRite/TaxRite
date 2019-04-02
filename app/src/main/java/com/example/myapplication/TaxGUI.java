@@ -26,7 +26,7 @@ import java.util.List;
 
 public class TaxGUI extends AppCompatActivity {
 
-ArrayList<Tax> aList = new ArrayList<Tax>();
+public ArrayList<Tax> aList = new ArrayList();
 ListView show;
 Double hour,rate,overtime,taxcredit,healthinsurance,unionsubs;
 
@@ -36,6 +36,7 @@ Double hour,rate,overtime,taxcredit,healthinsurance,unionsubs;
         setContentView(R.layout.activity_tax_gui);
 
 //show= (ListView)findViewById(R.id.listView);
+        ReadFromFile();
 
         final CheckBox c1 = (CheckBox)findViewById(R.id.weekly);
         final CheckBox c2 = (CheckBox)findViewById(R.id.monthly);
@@ -57,6 +58,8 @@ Double hour,rate,overtime,taxcredit,healthinsurance,unionsubs;
 
             @Override
 
+
+
             public void onClick(View view)
                     {
                         Double  hour = Double.parseDouble(hours1.getText().toString());
@@ -75,28 +78,30 @@ Double hour,rate,overtime,taxcredit,healthinsurance,unionsubs;
                         Toast.makeText(getApplicationContext(), "the information you added are :  hours"+hour+"\n"+"rate"+rate+"\n"+"Health Insurance"+health+"\n"+"Union Subs"+union+"\n"+"Tax Credit"+taxcredit+"\n"+"Overtime"+overtime,
 
 
-
                             Toast.LENGTH_LONG).show();
-
+                        WriteToFile();
                         if(c1.isChecked()){
 
-                        Toast.makeText(getApplicationContext(), "weekly"+p.weekly(),
+                        Toast.makeText(getApplicationContext(), "weekly"+aList.get(aList.size()-1).weekly(),
                                 Toast.LENGTH_LONG).show();
                     }
                         if(c2.isChecked()){
                             p.weekly();
-                            Toast.makeText(getApplicationContext(), "monthly"+p.monthly(),
+                            Toast.makeText(getApplicationContext(), "monthly"+aList.get(aList.size()-1).monthly(),
                                     Toast.LENGTH_LONG).show();
                         }
                         if(c3.isChecked()){
                             p.weekly();
                             p.monthly();
-                            Toast.makeText(getApplicationContext(), "annually"+p.annual(),
+                            Toast.makeText(getApplicationContext(), "annually"+aList.get(aList.size()-1).annual(),
                                     Toast.LENGTH_LONG).show();
                         }
                         //String hours = hours1.getText().toString();
                         //result.setText("Name:\t" + hours );
-                        startActivity(new Intent(getApplicationContext(),RebateGUI.class));
+
+
+
+                        startActivity(new Intent(getApplicationContext(),EntitlementsGUI.class));
                     }
                 }
 
@@ -109,5 +114,31 @@ Double hour,rate,overtime,taxcredit,healthinsurance,unionsubs;
 
 
 
+    }
+   public void WriteToFile (){
+String text="";
+        try{
+            File a=new File ("C:/Users/lam10/Desktop/codeapril/out.dat");
+            FileOutputStream b= new FileOutputStream(a);
+            ObjectOutputStream c= new ObjectOutputStream(b);
+            c.write(text.getBytes());
+            c.close();
+        }
+        catch (IOException e){
+            System.out.print(e);
+        }
+
+    }
+    public void ReadFromFile(){
+        try{
+            File a = new File("C:/Users/lam10/Desktop/codeapril/out.dat");
+            FileInputStream b= new FileInputStream(a);
+            ObjectInputStream c= new ObjectInputStream(b);
+            aList=(ArrayList<Tax>)c.readObject();
+            c.close();
+        }
+        catch (IOException|ClassNotFoundException ex){
+            System.out.print(ex);
+        }
     }
 }

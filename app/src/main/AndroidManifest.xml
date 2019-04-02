@@ -13,6 +13,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".EndGUI"></activity>
         <activity android:name=".FormGUI" />
+        <activity android:name=".EntitlementsGUI" />
         <activity android:name=".RebateGUI" />
         <activity android:name=".TaxGUI"/>
         <activity android:name=".MainActivity">
