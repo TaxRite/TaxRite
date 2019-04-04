@@ -6,6 +6,11 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,13 +35,15 @@ public ArrayList<Tax> aList = new ArrayList();
 ListView show;
 Double hour,rate,overtime,taxcredit,healthinsurance,unionsubs;
 
+    public Tax p= new Tax();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tax_gui);
 
 //show= (ListView)findViewById(R.id.listView);
-        ReadFromFile();
+       // ReadFromFile();
 
         final CheckBox c1 = (CheckBox)findViewById(R.id.weekly);
         final CheckBox c2 = (CheckBox)findViewById(R.id.monthly);
@@ -52,7 +59,7 @@ Double hour,rate,overtime,taxcredit,healthinsurance,unionsubs;
 
         calculate.setOnClickListener(new View.OnClickListener()
         {
-            Tax p= new Tax();
+
 
             TextView result;
 
@@ -79,11 +86,14 @@ Double hour,rate,overtime,taxcredit,healthinsurance,unionsubs;
 
 
                             Toast.LENGTH_LONG).show();
-                        WriteToFile();
+
+                       // WriteToFile();
                         if(c1.isChecked()){
 
-                        Toast.makeText(getApplicationContext(), "weekly"+aList.get(aList.size()-1).weekly(),
-                                Toast.LENGTH_LONG).show();
+                       // Toast.makeText(getApplicationContext(), "weekly"+aList.get(aList.size()-1).weekly(),
+                               // Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), "weekly"+p.weekly(),
+                                    Toast.LENGTH_LONG).show();
                     }
                         if(c2.isChecked()){
                             p.weekly();
@@ -115,30 +125,41 @@ Double hour,rate,overtime,taxcredit,healthinsurance,unionsubs;
 
 
     }
-   public void WriteToFile (){
-String text="";
+    public void setaList(ArrayList<Tax> aList){
+        this.aList=aList;
+    }
+
+    public ArrayList<Tax>getaList(){
+        return aList;
+    }
+ /* public void WriteToFile (String file,String text){
+
         try{
-            File a=new File ("C:/Users/lam10/Desktop/codeapril/out.dat");
-            FileOutputStream b= new FileOutputStream(a);
-            ObjectOutputStream c= new ObjectOutputStream(b);
-            c.write(text.getBytes());
-            c.close();
+           // File a=new File ("C:/Users/lam10/Desktop/codeapril/out.dat");
+            FileOutputStream b= openFileOutput("output",Context.MODE_PRIVATE);
+           b.write(aList);
+            //int x = aList.size();
+
+            b.write(aList.size());
+            b.close();
+            Toast.makeText(TaxGUI.this,"saved",Toast.LENGTH_SHORT).show();
         }
         catch (IOException e){
-            System.out.print(e);
+            e.printStackTrace();
+            Toast.makeText(TaxGUI.this,"error saving ",Toast.LENGTH_SHORT).show();
         }
 
     }
     public void ReadFromFile(){
         try{
-            File a = new File("C:/Users/lam10/Desktop/codeapril/out.dat");
-            FileInputStream b= new FileInputStream(a);
-            ObjectInputStream c= new ObjectInputStream(b);
+           // File a = new File("C:/Users/lam10/Desout.dat");
+            FileStreamReader b = openFileInput("output");
+            ObjectInputStream c= new ObjectInputStream();
             aList=(ArrayList<Tax>)c.readObject();
             c.close();
         }
         catch (IOException|ClassNotFoundException ex){
             System.out.print(ex);
         }
-    }
+    }*/
 }

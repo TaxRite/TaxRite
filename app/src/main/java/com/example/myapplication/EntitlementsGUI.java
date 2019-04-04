@@ -32,7 +32,11 @@ import java.util.List;
 
 public class EntitlementsGUI extends AppCompatActivity {
 public ArrayList<Tax> aList2 = new ArrayList();
-    @Override
+
+public void Entitlments( Tax p, String dep){
+
+}
+@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entitlements_gui);
@@ -43,18 +47,20 @@ public ArrayList<Tax> aList2 = new ArrayList();
 entitlement.setOnClickListener(new View.OnClickListener() {
 
 
-                                   Tax p= new Tax();
+                               Tax p= new Tax();
                                    TaxGUI g= new  TaxGUI();
-
 
 
                                    public void onClick(View view) {
 
 p.weekly();
+       // g.aList.equals(aList2)  ;
+//g.aList.add().
+p.weekly();
 
-
-
-                                       Toast.makeText(getApplicationContext(), "netpay "+ p.netpay(),
+//g.aList.get(g.aList.size()-1).weekly();
+                                       Toast.makeText(getApplicationContext(), "netpay "+ g.getaList().size()
+                                               ,
 
 
                                                Toast.LENGTH_LONG).show();
