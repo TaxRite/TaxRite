@@ -44,7 +44,7 @@ entitlement.setOnClickListener(new View.OnClickListener() {
 
 
                                    Tax p= new Tax();
-                                   TaxGUI g= new  TaxGUI();
+                                   TestTaxGUI g= new  TestTaxGUI();
 
 
 

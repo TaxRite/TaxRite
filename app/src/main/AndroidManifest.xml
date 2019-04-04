@@ -11,13 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EndGUI"></activity>
+        <activity android:name=".LanguageGUI"/>
+        <activity android:name=".TestTaxGUI" />
+        <activity android:name=".EndGUI" />
         <activity android:name=".FormGUI" />
         <activity android:name=".EntitlementsGUI" />
         <activity android:name=".RebateGUI" />
-        <activity android:name=".TaxGUI"/>
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

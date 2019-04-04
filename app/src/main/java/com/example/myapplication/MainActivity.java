@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                startActivity(new Intent(getApplicationContext(),TaxGUI.class));
+                startActivity(new Intent(getApplicationContext(),LanguageGUI.class));
            /* if you want to finish the first activity then just call
             finish(); */
             }

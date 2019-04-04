@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".TestTaxGUI">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_margin="20dp"
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/txttaxinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@android:color/background_dark"
+            android:text="Please enter your weekly payment details"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="24sp" />
+
+        <EditText
+            android:layout_margin="20dp"
+            android:id="@+id/TFhours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:ems="10"
+            android:hint="Hours"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:layout_margin="20dp"
+            android:id="@+id/TFrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:ems="10"
+            android:hint="Rate"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:layout_margin="20dp"
+            android:id="@+id/TFhealth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:ems="10"
+            android:hint="Health insurance"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:layout_margin="20dp"
+            android:id="@+id/TFunion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:ems="10"
+            android:hint="Union subrscriptions"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:layout_margin="20dp"
+            android:id="@+id/TFovertime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:ems="10"
+            android:hint="Overtime hours"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:layout_margin="20dp"
+            android:id="@+id/TFtaxcredit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:ems="10"
+            android:hint="Tax credit"
+            android:inputType="numberDecimal" />
+
+        <RadioGroup
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbweekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_light"
+                android:text="Weekly payment calculation   " />
+
+            <RadioButton
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:id="@+id/rbmonthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_light"
+                android:text="Monthly payment calculation" />
+
+            <RadioButton
+                android:id="@+id/rbannu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_light"
+                android:text="Annual payment calculation   " />
+
+            <Button
+                android:layout_margin="20dp"
+                android:id="@+id/btncalculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>
