@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">My Application</string>
     <string name="title_activity_form_gui">FormGUI</string>
-    <string name="large_text">
+    <string name="large_text">s
         "Material is the metaphor.\n\n"
 
         "A material metaphor is the unifying theory of a rationalized space and a system of motion."
@@ -91,4 +92,50 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <!-- Tax GUI -->
+    <string name="WeekDet">Please enter your weekly payment details</string>
+    <string name="Hrs">Hours</string>
+    <string name="Rt">Rate</string>
+    <string name="H_I">Health insurance</string>
+    <string name="U_S">Union subrscriptions</string>
+    <string name="Over_H">Overtime hours</string>
+    <string name="Tax_C">Tax credit</string>
+    <string name="weekly_payment_calculation">Weekly payment calculation</string>
+    <string name="Mon_Cal">Monthly payment calculation</string>
+    <string name="Ann_Cal">Annual payment calculation</string>
+    <string name="cal">Calculate</string>
+
+    <!-- Rebate GUI -->
+    <string name="Check_reb">Please check boxes which are relevant to you in order to help us determine whether you are eligible for the tax rebate</string>
+    <string name="Employed_Y">I have been employed for entire year</string>
+    <string name="Med_exp">I have had medical expenses</string>
+    <string name="Previous">I have previously claimed my tax rebate</string>
+    <string name="Two_Jobs">I have two or more jobs</string>
+    <string name="done">Done</string>
+    <string name="Emergency_Tax">I am/have been on the emergency tax</string>
+
+    <!-- Form GUI -->
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="add1">Address 1</string>
+    <string name="add2">Address 2</string>
+    <string name="add3">Address 3</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="confirm_email">Confirm Email</string>
+    <string name="msg">Your message here</string>
+    <string name="sub">Submit</string>
+
+    <!-- End GUI -->
+    <string name="ThankYou">Thank you. A member of our team will be in touch with you shortly to give you an update on your application. Thank you for using TaxRite!</string>
+    <string name="exit">Exit</string>
+
+    <!-- Entitlement GUI -->
+    <string name="entitelement">Entitlements</string>
+
+    <!-- Change Language Button -->
+    <string name="changeLang">Change Language</string>
+
+    <!-- Start Button -->
+    <string name="start">Start</string>
 </resources>

@@ -27,7 +27,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="20dp"
             android:background="@android:color/background_dark"
-            android:text="Please enter your weekly payment details"
+            android:text="@string/WeekDet"
             android:textColor="@android:color/holo_orange_light"
             android:textSize="24sp" />
 
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
-            android:hint="Hours"
+            android:hint="@string/Hrs"
             android:inputType="numberDecimal" />
 
         <EditText
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
-            android:hint="Rate"
+            android:hint="@string/Rt"
             android:inputType="numberDecimal" />
 
         <EditText
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
-            android:hint="Health insurance"
+            android:hint="@string/H_I"
             android:inputType="numberDecimal" />
 
         <EditText
@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
-            android:hint="Union subrscriptions"
+            android:hint="@string/U_S"
             android:inputType="numberDecimal" />
 
         <EditText
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
-            android:hint="Overtime hours"
+            android:hint="@string/Over_H"
             android:inputType="numberDecimal" />
 
         <EditText
@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
-            android:hint="Tax credit"
+            android:hint="@string/Tax_C"
             android:inputType="numberDecimal" />
 
         <RadioGroup
@@ -105,7 +105,7 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_light"
-                android:text="Weekly payment calculation   " />
+                android:text="@string/weekly_payment_calculation" />
 
             <RadioButton
                 android:layout_gravity="center_horizontal"
@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_light"
-                android:text="Monthly payment calculation" />
+                android:text="@string/Mon_Cal" />
 
             <RadioButton
                 android:id="@+id/rbannu"
@@ -125,14 +125,14 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_light"
-                android:text="Annual payment calculation   " />
+                android:text="@string/Ann_Cal" />
 
             <Button
                 android:layout_margin="20dp"
                 android:id="@+id/btncalculate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Calculate" />
+                android:text="@string/cal" />
         </RadioGroup>
     </LinearLayout>
 </ScrollView>
