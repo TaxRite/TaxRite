@@ -67,27 +67,30 @@ public class TestTaxGUI extends AppCompatActivity {
                                            p.setOverTime(overtime);
                                            aList.add(p);
 
-                                           Toast.makeText(getApplicationContext(), "THe following info has been added: " + "\n" + "Hours: " + hour + "\n"
+                                           Toast.makeText(getApplicationContext(), "The following info has been added: " + "\n" + "Hours: " + hour + "\n"
                                                            + "Rate: " + rate + "\n" + "Health Insurance: " + health + "\n" + "Union Subs: " + union + "\n"
                                                            + "Tax Credit: " + taxcredit + "\n" + "Overtime: " + overtime,
 
 
                                                    Toast.LENGTH_LONG).show();
                                            WriteToFile();
-                                           if (radWeek.isSelected()) {
-
-                                               Toast.makeText(getApplicationContext(), "weekly" + aList.get(aList.size() - 1).weekly(),
+                                           if (radWeek.isChecked()) {
+                                               p.weekly();
+                                               Toast.makeText(getApplicationContext(), "Weekly payment is: " + aList.get(aList.size() - 1).weekly(),
                                                        Toast.LENGTH_LONG).show();
                                            }
-                                           if (radMonth.isSelected()) {
-                                               p.weekly();
-                                               Toast.makeText(getApplicationContext(), "monthly" + aList.get(aList.size() - 1).monthly(),
-                                                       Toast.LENGTH_LONG).show();
-                                           }
-                                           if (radAnnu.isSelected()) {
-                                               p.weekly();
+                                           else if (radMonth.isChecked()) {
                                                p.monthly();
-                                               Toast.makeText(getApplicationContext(), "annually" + aList.get(aList.size() - 1).annual(),
+                                               Toast.makeText(getApplicationContext(), "Monthly payment is: " + aList.get(aList.size() - 1).monthly(),
+                                                       Toast.LENGTH_LONG).show();
+                                           }
+                                           else if (radAnnu.isChecked()) {
+                                               p.annual();
+                                               Toast.makeText(getApplicationContext(), "Annual payment is: " + aList.get(aList.size() - 1).annual(),
+                                                       Toast.LENGTH_LONG).show();
+                                           }
+                                           else{
+                                               Toast.makeText(getApplicationContext(), "Please select from one of the options",
                                                        Toast.LENGTH_LONG).show();
                                            }
                                            //String hours = hours1.getText().toString();
