@@ -51,7 +51,7 @@ public static double net (){
             final Button entitlement = (Button) findViewById(R.id.entitelemnt);
 
 
-            // ReadFromFile();
+
             entitlement.setOnClickListener(new View.OnClickListener() {
 
 

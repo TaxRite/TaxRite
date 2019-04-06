@@ -95,8 +95,7 @@ public static double netTest=0.0;
                                            netTest=p.netpay();
                                            Toast.makeText(getApplicationContext(), "netpaytestGUI: " + netTest,
                                                    Toast.LENGTH_LONG).show();
-                                           //String hours = hours1.getText().toString();
-                                           //result.setText("Name:\t" + hours );
+
                                            startActivity(new Intent(getApplicationContext(), EntitlementsGUI.class));
                                        }
                                    }
