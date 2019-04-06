@@ -43,6 +43,7 @@ public static double net (){
 
 
         @Override
+
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_entitlements_gui);
@@ -62,7 +63,7 @@ public static double net (){
 
                                                public void onClick(View view) {
 
-                                                   Toast.makeText(getApplicationContext(), "netpay "+net()
+                                                   Toast.makeText(getApplicationContext(), "netpayEntitment "+net()
                                                            ,
                                                            Toast.LENGTH_LONG).show();
                                                    startActivity(new Intent(getApplicationContext(), RebateGUI.class));
