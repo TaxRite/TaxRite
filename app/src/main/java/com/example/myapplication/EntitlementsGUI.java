@@ -30,51 +30,49 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class EntitlementsGUI extends AppCompatActivity {
-public ArrayList<Tax> aList2 = new ArrayList();
+public class EntitlementsGUI  extends AppCompatActivity {
 
-public void Entitlments( Tax p, String dep){
+        public ArrayList<Tax> aList2 = new ArrayList();
+
+
+public static double net (){
+    double net = TestTaxGUI.netTest;
+    return  net;
 
 }
-@Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_entitlements_gui);
-        final Button entitlement= (Button)findViewById(R.id.entitelemnt);
 
 
-       // ReadFromFile();
-entitlement.setOnClickListener(new View.OnClickListener() {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_entitlements_gui);
+
+            final Button entitlement = (Button) findViewById(R.id.entitelemnt);
 
 
-                               Tax p= new Tax();
-                                   TaxGUI g= new  TaxGUI();
-
-
-                                   public void onClick(View view) {
-
-p.weekly();
-       // g.aList.equals(aList2)  ;
-//g.aList.add().
-p.weekly();
-
-//g.aList.get(g.aList.size()-1).weekly();
-                                       Toast.makeText(getApplicationContext(), "netpay "+ g.getaList().size()
-                                               ,
-
-
-                                               Toast.LENGTH_LONG).show();
-                                       startActivity(new Intent(getApplicationContext(),RebateGUI.class));
-                                   }
-
-                               }
-          );
+            // ReadFromFile();
+            entitlement.setOnClickListener(new View.OnClickListener() {
 
 
 
+
+                Tax p = new Tax();
+                                               TestTaxGUI g = new TestTaxGUI();
+
+
+                                               public void onClick(View view) {
+
+                                                   Toast.makeText(getApplicationContext(), "netpay "+net()
+                                                           ,
+                                                           Toast.LENGTH_LONG).show();
+                                                   startActivity(new Intent(getApplicationContext(), RebateGUI.class));
+                                               }
+
+                                           }
+            );
 
 
         }
-
     }
+
 

@@ -26,7 +26,7 @@ public class TestTaxGUI extends AppCompatActivity {
     public ArrayList<Tax> aList = new ArrayList();
     ListView show;
     Double hour, rate, overtime, taxcredit, healthinsurance, unionsubs;
-
+public static double netTest=0.0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +35,6 @@ public class TestTaxGUI extends AppCompatActivity {
         Button butCalc = (Button) findViewById(R.id.btncalculate);
 
 
-        ReadFromFile();
 
         final RadioButton radWeek = (RadioButton) findViewById(R.id.rbweekly);
         final RadioButton radMonth = (RadioButton) findViewById(R.id.rbmonthly);
@@ -66,14 +65,15 @@ public class TestTaxGUI extends AppCompatActivity {
                                            p.setTaxCredit(taxcredit);
                                            p.setOverTime(overtime);
                                            aList.add(p);
-
+netTest=p.netpay();
                                            Toast.makeText(getApplicationContext(), "The following info has been added: " + "\n" + "Hours: " + hour + "\n"
                                                            + "Rate: " + rate + "\n" + "Health Insurance: " + health + "\n" + "Union Subs: " + union + "\n"
                                                            + "Tax Credit: " + taxcredit + "\n" + "Overtime: " + overtime,
 
 
                                                    Toast.LENGTH_LONG).show();
-                                           WriteToFile();
+                                           Toast.makeText(getApplicationContext(), "netpaytestGUI: " + netTest,
+                                                   Toast.LENGTH_LONG).show();
                                            if (radWeek.isChecked()) {
                                                p.weekly();
                                                Toast.makeText(getApplicationContext(), "Weekly payment is: " + aList.get(aList.size() - 1).weekly(),
@@ -104,31 +104,8 @@ public class TestTaxGUI extends AppCompatActivity {
 
     }
 
-    public void WriteToFile() {
-        String text = "";
-        try {
-            File a = new File("C:/Users/lam10/Desktop/codeapril/out.dat");
-            FileOutputStream b = new FileOutputStream(a);
-            ObjectOutputStream c = new ObjectOutputStream(b);
-            c.write(text.getBytes());
-            c.close();
-        } catch (IOException e) {
-            System.out.print(e);
-        }
 
-    }
 
-    public void ReadFromFile() {
-        try {
-            File a = new File("C:/Users/lam10/Desktop/codeapril/out.dat");
-            FileInputStream b = new FileInputStream(a);
-            ObjectInputStream c = new ObjectInputStream(b);
-            aList = (ArrayList<Tax>) c.readObject();
-            c.close();
-        } catch (IOException | ClassNotFoundException ex) {
-            System.out.print(ex);
-        }
-    }
 }
 
 
