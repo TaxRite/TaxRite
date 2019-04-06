@@ -65,15 +65,14 @@ public static double netTest=0.0;
                                            p.setTaxCredit(taxcredit);
                                            p.setOverTime(overtime);
                                            aList.add(p);
-netTest=p.netpay();
+
                                            Toast.makeText(getApplicationContext(), "The following info has been added: " + "\n" + "Hours: " + hour + "\n"
                                                            + "Rate: " + rate + "\n" + "Health Insurance: " + health + "\n" + "Union Subs: " + union + "\n"
                                                            + "Tax Credit: " + taxcredit + "\n" + "Overtime: " + overtime,
 
 
                                                    Toast.LENGTH_LONG).show();
-                                           Toast.makeText(getApplicationContext(), "netpaytestGUI: " + netTest,
-                                                   Toast.LENGTH_LONG).show();
+
                                            if (radWeek.isChecked()) {
                                                p.weekly();
                                                Toast.makeText(getApplicationContext(), "Weekly payment is: " + aList.get(aList.size() - 1).weekly(),
@@ -93,6 +92,9 @@ netTest=p.netpay();
                                                Toast.makeText(getApplicationContext(), "Please select from one of the options",
                                                        Toast.LENGTH_LONG).show();
                                            }
+                                           netTest=p.netpay();
+                                           Toast.makeText(getApplicationContext(), "netpaytestGUI: " + netTest,
+                                                   Toast.LENGTH_LONG).show();
                                            //String hours = hours1.getText().toString();
                                            //result.setText("Name:\t" + hours );
                                            startActivity(new Intent(getApplicationContext(), EntitlementsGUI.class));
