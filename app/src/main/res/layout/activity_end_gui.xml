@@ -34,6 +34,8 @@
             android:id="@+id/btnfinished"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/exit" />
+            android:text="@string/exit"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/holo_orange_light"/>
     </LinearLayout>
 </ScrollView>

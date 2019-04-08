@@ -58,7 +58,7 @@
     <Button
         android:id="@+id/changeMyLang"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="162dp"
+        android:layout_width="161dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
