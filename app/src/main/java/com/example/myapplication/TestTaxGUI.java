@@ -66,34 +66,34 @@ public static double netTest=0.0;
                                            p.setOverTime(overtime);
                                            aList.add(p);
 
-                                           Toast.makeText(getApplicationContext(), "The following info has been added: " + "\n" + "Hours: " + hour + "\n"
-                                                           + "Rate: " + rate + "\n" + "Health Insurance: " + health + "\n" + "Union Subs: " + union + "\n"
-                                                           + "Tax Credit: " + taxcredit + "\n" + "Overtime: " + overtime,
+                                           Toast.makeText(getApplicationContext(), getString(R.string.ti) + "\n" + getString(R.string.tH) + hour + "\n"
+                                                           + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
+                                                           + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime,
 
 
                                                    Toast.LENGTH_LONG).show();
 
                                            if (radWeek.isChecked()) {
                                                p.weekly();
-                                               Toast.makeText(getApplicationContext(), "Weekly payment is: " + aList.get(aList.size() - 1).weekly(),
+                                               Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
                                                        Toast.LENGTH_LONG).show();
                                            }
                                            else if (radMonth.isChecked()) {
                                                p.monthly();
-                                               Toast.makeText(getApplicationContext(), "Monthly payment is: " + aList.get(aList.size() - 1).monthly(),
+                                               Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
                                                        Toast.LENGTH_LONG).show();
                                            }
                                            else if (radAnnu.isChecked()) {
                                                p.annual();
-                                               Toast.makeText(getApplicationContext(), "Annual payment is: " + aList.get(aList.size() - 1).annual(),
+                                               Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
                                                        Toast.LENGTH_LONG).show();
                                            }
                                            else{
-                                               Toast.makeText(getApplicationContext(), "Please select from one of the options",
+                                               Toast.makeText(getApplicationContext(), getString(R.string.tOptions),
                                                        Toast.LENGTH_LONG).show();
                                            }
                                            netTest=p.netpay();
-                                           Toast.makeText(getApplicationContext(), "netpaytestGUI: " + netTest,
+                                           Toast.makeText(getApplicationContext(), getString(R.string.tNet) + netTest,
                                                    Toast.LENGTH_LONG).show();
 
                                            startActivity(new Intent(getApplicationContext(), EntitlementsGUI.class));

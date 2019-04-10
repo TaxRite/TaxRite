@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     recreate();
                 }
                 
-                //Dismiss alert box when language is selected
+                //Drop alert box when language is selected
                 dialoginterface.dismiss();
             }
         });
@@ -90,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
         Configuration config = new Configuration();
         config.locale = locale;
         getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+
         //save data to shared preferences
         SharedPreferences.Editor editor = getSharedPreferences("Settings", MODE_PRIVATE).edit();
         editor.putString("My Lang", lang);

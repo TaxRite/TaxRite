@@ -14,10 +14,10 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_margin="20dp"
             android:id="@+id/imageView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             app:srcCompat="@drawable/logo" />
 
         <TextView
@@ -32,30 +32,30 @@
             android:textSize="24sp" />
 
         <EditText
-            android:layout_margin="20dp"
             android:id="@+id/TFhours"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/Hrs"
             android:inputType="numberDecimal" />
 
         <EditText
-            android:layout_margin="20dp"
             android:id="@+id/TFrate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/Rt"
             android:inputType="numberDecimal" />
 
         <EditText
-            android:layout_margin="20dp"
             android:id="@+id/TFhealth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/H_I"
@@ -72,30 +72,30 @@
             android:inputType="numberDecimal" />
 
         <EditText
-            android:layout_margin="20dp"
             android:id="@+id/TFovertime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/Over_H"
             android:inputType="numberDecimal" />
 
         <EditText
-            android:layout_margin="20dp"
             android:id="@+id/TFtaxcredit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/Tax_C"
             android:inputType="numberDecimal" />
 
         <RadioGroup
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="20dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp">
 
             <RadioButton
                 android:id="@+id/rbweekly"
@@ -108,11 +108,11 @@
                 android:text="@string/weekly_payment_calculation" />
 
             <RadioButton
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="10dp"
                 android:id="@+id/rbmonthly"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_light"
                 android:text="@string/Mon_Cal" />
@@ -128,11 +128,13 @@
                 android:text="@string/Ann_Cal" />
 
             <Button
-                android:layout_margin="20dp"
                 android:id="@+id/btncalculate"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/cal" />
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@android:color/holo_orange_light"
+                android:text="@string/cal"
+                android:textColor="#FFFFFF" />
         </RadioGroup>
     </LinearLayout>
 </ScrollView>

@@ -92,6 +92,7 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+
     <!-- Tax GUI -->
     <string name="WeekDet">Please enter your weekly payment details</string>
     <string name="Hrs">Hours</string>
@@ -104,6 +105,21 @@
     <string name="Mon_Cal">Monthly payment calculation</string>
     <string name="Ann_Cal">Annual payment calculation</string>
     <string name="cal">Calculate</string>
+
+
+    <!-- Tax gui pop-ups -->
+    <string name="ti">The following information has been added:</string>
+    <string name="tH">Hours:</string>
+    <string name="tRate">Rate:</string>
+    <string name="tHea">Health Insurance:</string>
+    <string name="tUnion">Union Subs:</string>
+    <string name="tTaxCredit">Tax Credit:</string>
+    <string name="tOver">Overtime:</string>
+    <string name="tWeekly">Weekly payment is:</string>
+    <string name="tMonthly">Monthly payment is:</string>
+    <string name="tYearly">Annual payment is:</string>
+    <string name="tOptions">Please select from one of the options</string>
+    <string name="tNet">Net Pay:</string>
 
     <!-- Rebate GUI -->
     <string name="Check_reb">Please check boxes which are relevant to you in order to help us determine whether you are eligible for the tax rebate</string>
@@ -138,4 +154,7 @@
 
     <!-- Start Button -->
     <string name="start">Start</string>
+
+
+
 </resources>
