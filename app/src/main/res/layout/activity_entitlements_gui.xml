@@ -46,10 +46,17 @@
 			android:background="@android:color/holo_orange_light"
 			android:hint="Job Seeker" />
 
+		<CheckBox
+			android:id="@+id/ckbresidence"
+			android:layout_width="match_parent"
+			android:layout_height="63dp"
+			android:background="@android:color/holo_orange_light"
+			android:hint="Are you living in ireland over 3 years" />
+
 		<EditText
 			android:id="@+id/txtage"
 			android:layout_width="match_parent"
-			android:layout_height="52dp"
+			android:layout_height="72dp"
 			android:background="@android:color/holo_orange_light"
 			android:ems="10"
 			android:hint="      Age"

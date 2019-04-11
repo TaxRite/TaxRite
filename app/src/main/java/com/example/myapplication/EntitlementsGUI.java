@@ -171,6 +171,10 @@ public class EntitlementsGUI  extends AppCompatActivity {
 						Toast.makeText(getApplicationContext(), "if you are a jobseeker or you working less than 30 hours you are entitlement to get rent supplement",
 								Toast.LENGTH_LONG).show();
 					}
+					else if (!residency.isChecked()&& working.isChecked()) {
+						Toast.makeText(getApplicationContext(), "Sory its seems like you are not entitle for rent supplement as you are working full time ",
+								Toast.LENGTH_LONG).show();
+					}
                 	startActivity(new Intent(getApplicationContext(), RebateGUI.class));
                                                }
 
