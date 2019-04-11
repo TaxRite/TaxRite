@@ -7,17 +7,68 @@
     android:background="#000000"
     tools:context=".EntitlementsGUI">
 
-    <Button
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_centerVertical="false"
-        android:background="@android:color/holo_orange_light"
-        android:textColor="#000000"
-        android:id="@+id/entitelemnt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/entitelement"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="298dp" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
 
+		<ImageView
+			android:id="@+id/imageView7"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:srcCompat="@drawable/logo" />
+
+		<CheckBox
+			android:id="@+id/cbsingle"
+			android:layout_width="match_parent"
+			android:layout_height="47dp"
+			android:background="@android:color/holo_orange_light"
+			android:hint="Single" />
+
+		<CheckBox
+			android:id="@+id/cbmaried"
+			android:layout_width="match_parent"
+			android:layout_height="45dp"
+			android:background="@android:color/holo_orange_light"
+			android:hint="Maried" />
+
+		<CheckBox
+			android:id="@+id/cbworking"
+			android:layout_width="match_parent"
+			android:layout_height="49dp"
+			android:background="@android:color/holo_orange_light"
+			android:hint="Working" />
+
+		<CheckBox
+			android:id="@+id/cbjseeker"
+			android:layout_width="match_parent"
+			android:layout_height="49dp"
+			android:background="@android:color/holo_orange_light"
+			android:hint="Job Seeker" />
+
+		<EditText
+			android:id="@+id/txtage"
+			android:layout_width="match_parent"
+			android:layout_height="52dp"
+			android:background="@android:color/holo_orange_light"
+			android:ems="10"
+			android:hint="      Age"
+			android:inputType="number" />
+
+		<EditText
+			android:id="@+id/txtdependencies"
+			android:layout_width="match_parent"
+			android:layout_height="63dp"
+			android:background="@android:color/holo_orange_light"
+			android:ems="10"
+			android:hint="Dependencies"
+			android:inputType="number" />
+
+		<Button
+			android:id="@+id/btnclick"
+			android:layout_width="match_parent"
+			android:layout_height="85dp"
+			android:hint="Check Entitlements" />
+
+	</LinearLayout>
 </RelativeLayout>

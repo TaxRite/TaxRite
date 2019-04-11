@@ -36,6 +36,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 	private CheckBox single;
 	private CheckBox maried;
 	private CheckBox working;
+	private CheckBox residency;
 	private CheckBox jobseeker;
 	private Button checkentilements;
 
@@ -61,7 +62,10 @@ public class EntitlementsGUI  extends AppCompatActivity {
 			maried = (CheckBox)findViewById(R.id.cbmaried);
 			single = (CheckBox)findViewById(R.id.cbsingle);
 			maried = (CheckBox)findViewById(R.id.cbmaried);
+			working=(CheckBox)findViewById(R.id.cbworking);
+			jobseeker=(CheckBox)findViewById(R.id.cbjseeker); 
 			checkentilements =(Button)findViewById(R.id.btnclick);
+			residency=(CheckBox)findViewById(R.id.ckbresidence);
 
             final Button checkentilements = (Button) findViewById(R.id.btnclick);
 
@@ -80,46 +84,44 @@ public class EntitlementsGUI  extends AppCompatActivity {
 					e.setAge(age);
 					e.setDependencies(dependencies);
 					aList2.add(e);
-					Toast.makeText(getApplicationContext(), "netpayEntitment "+net(),
+					Toast.makeText(getApplicationContext(), "based on your net income  "+net(),
 							Toast.LENGTH_LONG).show();
+					
+																				///medical card
 					if (single.isChecked()&& !maried.isChecked()&& age <= (66) && (dependencies< 1 && net() <= 184 || maried.isChecked() &&  !single.isChecked() && age >= (66) && (dependencies < 1 && net() <= (201.50)))) {
 						Toast.makeText(getApplicationContext(), "Good news! It seems that you might be entitled to get Medical card on based on scheme 1,please apply with form provided",
 								Toast.LENGTH_LONG).show();
 					} else if ((maried.isChecked() && !single.isChecked() && age <(66) && (dependencies < 1 && net() <= 164 || single.isChecked()&& !maried.isChecked ()&& age > (66) && (dependencies < 1 && net() <= (173.50))))){
 						Toast.makeText(getApplicationContext(), "Good news! It seems that you might be entitled to get Medical card on based on scheme 2,please apply with form provided",
 								Toast.LENGTH_LONG).show();
-
-
 					} else if ((single.isChecked()||maried.isChecked() && age <(66) && (dependencies >0 && net() <= 266.50 && dependencies < 2 || single.isChecked()|| maried.isChecked() && age > (66) && (dependencies >0&& (dependencies <2 && net() <= (298)))))){
 						Toast.makeText(getApplicationContext(), "Good news! It seems like you might be entitled to get Medical card on based on scheme 3,please apply with form provided",
 								Toast.LENGTH_LONG).show();
-
-					///}else if ((single.isChecked()&& ! maried.isChecked() && age <(66) && (dependencies >0 && net() > 184.50  || single.isChecked()&& !maried.isChecked() && age > (66) && (dependencies < 1 && net() > (298))))) {
-						///Toast.makeText(getApplicationContext(), "It does not seem like you are entitle to get medical card but you can contact with citizen information office if you can get a GP card",
-							///	Toast.LENGTH_LONG).show();
 					}
 					else
 						for (int i=0; i < 2; i++) {
-							
+
+							Toast.makeText(getApplicationContext(), "sorry you are not entitle to get medical card but you may try for a GP card only",
+									Toast.LENGTH_LONG).show();
 						}
-						/// Family suppliments calculation
-					if ( net() < 521.00 && ((dependencies>0 && ((dependencies<2)&& maried.isChecked()||single.isChecked())))) {
-						Toast.makeText(getApplicationContext(), "you are entitle to get family supplyment to make your weekly overall  income 521 ",
+																		///family supplement
+					if ( net() < 521.00 && ((dependencies>0 && ((dependencies<2)&& working.isChecked()&& maried.isChecked()||single.isChecked())))) {
+						Toast.makeText(getApplicationContext(), "you are entitle to get family supplement to make your weekly overall  income 521 ",
 
 								Toast.LENGTH_LONG).show();
 					}
-					else if( net() >521.00 && net() <= 622.00 && ((dependencies>1)&& ((dependencies<3 ) ) && single.isChecked()||maried.isChecked())){
-						Toast.makeText(getApplicationContext(), "you are entitle to get family supplyment to make your weekly overall  income 622",
+					else if( net() >521.00 && net() <= 622.00 && ((dependencies>1)&& ((dependencies<3 ) ) &&working.isChecked()&& single.isChecked()||maried.isChecked())){
+						Toast.makeText(getApplicationContext(), "you are entitle to get family supplement to make your weekly overall  income 622",
 
 								Toast.LENGTH_LONG).show();
 					}
-					else if(net() >723.00 && net() <= 824.00 && dependencies>2 && dependencies<4 && single.isChecked() || maried.isChecked()){
+					else if(net() >723.00 && net() <= 824.00 && dependencies>2 && dependencies<4 && working.isChecked()&& single.isChecked() || maried.isChecked()){
 
 
 						Toast.makeText(getApplicationContext(), "you are entitle to get family supplement to make your weekly overall  income 622",
 								Toast.LENGTH_LONG).show();
 					}
-					else if (net() >521.00 && dependencies <1 && single.isChecked()||maried.isChecked()) {
+					else if (net() >521.00 && dependencies <1 &&working.isChecked()&& single.isChecked()||maried.isChecked()) {
 						Toast.makeText(getApplicationContext(), "sorry your circumstances seems bit complex please contact one of your local social office,Thanks",
 								Toast.LENGTH_LONG).show();
 					}
@@ -128,8 +130,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 								Toast.LENGTH_LONG).show();
 
 					}
-
-					/// Child benefit
+																	///child benefit
 					if (dependencies== 1){
 						Toast.makeText(getApplicationContext(), "You are entitle for child benefit of €140 ",
 								Toast.LENGTH_LONG).show(); 
@@ -155,6 +156,20 @@ public class EntitlementsGUI  extends AppCompatActivity {
 					}else if( dependencies == 7){
 					Toast.makeText(getApplicationContext(), "family sufflyments increase simultansiously €140 for every children ",
 							Toast.LENGTH_LONG).show();
+					}
+																		///susi
+					if(working.isChecked()&& residency.isChecked() ){
+						Toast.makeText(getApplicationContext(), "You are also entitle for SUSI, please apply online with your supportive documents ",
+								Toast.LENGTH_LONG).show();
+					}
+					else if (!residency.isChecked()&& working.isChecked()){
+						Toast.makeText(getApplicationContext(), "Sory its seems like you are not entitle for susi as you are not living in ireland more than 3 years ",
+								Toast.LENGTH_LONG).show();
+					}
+																			///rent supplement
+					if (!working.isChecked()&& jobseeker.isChecked()){
+						Toast.makeText(getApplicationContext(), "if you are a jobseeker or you working less than 30 hours you are entitlement to get rent supplement",
+								Toast.LENGTH_LONG).show();
 					}
                 	startActivity(new Intent(getApplicationContext(), RebateGUI.class));
                                                }
