@@ -79,11 +79,14 @@ public static double netTest=0.0;
                                                        Toast.LENGTH_LONG).show();
                                            }
                                            else if (radMonth.isChecked()) {
+                                               p.weekly();
                                                p.monthly();
                                                Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
                                                        Toast.LENGTH_LONG).show();
                                            }
                                            else if (radAnnu.isChecked()) {
+                                               p.weekly();
+                                               p.monthly();
                                                p.annual();
                                                Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
                                                        Toast.LENGTH_LONG).show();
