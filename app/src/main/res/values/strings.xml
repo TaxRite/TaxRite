@@ -141,6 +141,8 @@
     <string name="confirm_email">Confirm Email</string>
     <string name="msg">Your message here</string>
     <string name="sub">Submit</string>
+    <string name="fCheck">Please check all fields</string>
+    <string name="fNotMatch">Email does not match!</string>
 
     <!-- End GUI -->
     <string name="ThankYou">Thank you. A member of our team will be in touch with you shortly to give you an update on your application. Thank you for using TaxRite!</string>
@@ -148,12 +150,43 @@
 
     <!-- Entitlement GUI -->
     <string name="entitelement">Entitlements</string>
+    <string name="single">Single</string>
+    <string name="maried">Maried</string>
+    <string name="working">Working</string>
+    <string name="job_seeker">Job Seeker</string>
+    <string name="Depend">Dependencies</string>
+    <string name="age">Age</string>
+    <string name="eLiving">Are you living in ireland over 3 years</string>
+    <string name="checkE">Check Entitlements</string>
 
     <!-- Change Language Button -->
     <string name="changeLang">Change Language</string>
 
     <!-- Start Button -->
     <string name="start">Start</string>
+
+    <!-- Entitlements GUI Pop-ups -->
+    <string name="entD1">Good news! It seems that you might be entitled to get Medical card on based on scheme 1,please apply with form provided</string>
+    <string name="entD2">Good news! It seems that you might be entitled to get Medical card on based on scheme 2,please apply with form provided</string>
+    <string name="entD3">based on your net income</string>
+    <string name="entD4">Good news! It seems like you might be entitled to get Medical card on based on scheme 3,please apply with form provided</string>
+    <string name="entD5">sorry you are not entitled to get medical card but you may try for a GP card only</string>
+    <string name="entD6">you are entitled to get family supplement to make your weekly overall income €521</string>
+    <string name="entD7">you are entitled to get family supplement to make your weekly overall income €622</string>
+    <string name="entD8">you are entitled to get family supplement to make your weekly overall income €622</string>
+    <string name="entD9">sorry your circumstances seems bit complex please contact one of your local social office,Thanks</string>
+    <string name="entD10">sorry your circumstances seems bit complex please contact one of your local social office,Thanks</string>
+    <string name="entD11">You are entitle for child benefit of €140</string>
+    <string name="entD12">You are entitle for child benefit of €280</string>
+    <string name="entD13">You are entitle for child benefit of €420</string>
+    <string name="entD14">You are entitle for child benefit of €560</string>
+    <string name="entD15">You are entitle for child benefit of €700</string>
+    <string name="entD16">You are entitle for child benefit of €840</string>
+    <string name="entD17">family supplements increase simultaneously €140 for every child</string>
+    <string name="entD18">You are also entitled for SUSI, please apply online with your supportive documents</string>
+    <string name="entD19">Sorry its seems like you are not entitle for susi as you are not living in ireland more than 3 years</string>
+    <string name="entD20">if you are a jobseeker or you working less than 30 hours you are entitlement to get rent supplement</string>
+    <string name="entD21">Sorry it seems like you are not entitled for rent supplement as you are working full time</string>
 
 
 

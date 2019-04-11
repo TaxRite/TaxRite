@@ -46,7 +46,7 @@ public class FormGUI extends AppCompatActivity {
                     public void onClick(View arg0)
                     {
                         if(nameInput.getText().toString().equals("")||surnnameInput.getText().toString().equals("")||phoneInput.getText().toString().equals("")||add1Input.getText().toString().equals("")||add2Input.getText().toString().equals("")||add3Input.getText().toString().equals("")||msgInput.getText().toString().equals("")){
-                             Toast.makeText(getApplicationContext(), "Please check all fields",
+                             Toast.makeText(getApplicationContext(), getString(R.string.fCheck),
                              Toast.LENGTH_LONG).show();
                         }
                         else{
@@ -77,7 +77,7 @@ public class FormGUI extends AppCompatActivity {
                                 startActivity(new Intent(getApplicationContext(),EndGUI.class));
                             }
                             else{
-                                Toast.makeText(getApplicationContext(), "Email does not match!",
+                                Toast.makeText(getApplicationContext(), getString(R.string.fNotMatch),
                                         Toast.LENGTH_LONG).show();
                             }
                         }

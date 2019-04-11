@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#000000"
-    tools:context=".EntitlementsGUI">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#000000"
+	tools:context=".EntitlementsGUI">
 
 	<LinearLayout
 		android:layout_width="match_parent"
@@ -21,61 +21,74 @@
 		<CheckBox
 			android:id="@+id/cbsingle"
 			android:layout_width="match_parent"
-			android:layout_height="47dp"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
-			android:hint="Single" />
+			android:hint="@string/single" />
 
 		<CheckBox
 			android:id="@+id/cbmaried"
 			android:layout_width="match_parent"
-			android:layout_height="45dp"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
-			android:hint="Maried" />
+			android:hint="@string/maried" />
 
 		<CheckBox
 			android:id="@+id/cbworking"
 			android:layout_width="match_parent"
-			android:layout_height="49dp"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
-			android:hint="Working" />
+			android:hint="@string/working" />
 
 		<CheckBox
 			android:id="@+id/cbjseeker"
 			android:layout_width="match_parent"
-			android:layout_height="49dp"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
-			android:hint="Job Seeker" />
+			android:hint="@string/job_seeker" />
 
 		<CheckBox
 			android:id="@+id/ckbresidence"
 			android:layout_width="match_parent"
-			android:layout_height="63dp"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
-			android:hint="Are you living in ireland over 3 years" />
+			android:hint="@string/eLiving" />
 
 		<EditText
 			android:id="@+id/txtage"
 			android:layout_width="match_parent"
-			android:layout_height="72dp"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
 			android:ems="10"
-			android:hint="      Age"
+			android:hint="@string/age"
 			android:inputType="number" />
 
 		<EditText
 			android:id="@+id/txtdependencies"
 			android:layout_width="match_parent"
-			android:layout_height="63dp"
+			android:layout_height="wrap_content"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
 			android:ems="10"
-			android:hint="Dependencies"
+			android:hint="@string/Depend"
 			android:inputType="number" />
-
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 		<Button
 			android:id="@+id/btnclick"
-			android:layout_width="match_parent"
-			android:layout_height="85dp"
-			android:hint="Check Entitlements" />
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+			android:layout_marginTop="20dp"
+			android:hint="@string/checkE" />
+        </RelativeLayout>
 
 	</LinearLayout>
-</RelativeLayout>
+</ScrollView>

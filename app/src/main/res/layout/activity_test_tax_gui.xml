@@ -132,9 +132,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
-                android:background="@android:color/holo_orange_light"
-                android:text="@string/cal"
-                android:textColor="#FFFFFF" />
+                android:text="@string/cal"/>
         </RadioGroup>
     </LinearLayout>
 </ScrollView>
