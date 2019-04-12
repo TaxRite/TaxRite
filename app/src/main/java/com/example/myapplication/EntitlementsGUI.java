@@ -88,13 +88,13 @@ public class EntitlementsGUI  extends AppCompatActivity {
 							Toast.LENGTH_LONG).show();
 					
 																				///medical card
-					if (single.isChecked()&& !maried.isChecked()&& age <= (66) && (dependencies< 1 && net() <= 184 || maried.isChecked() &&  !single.isChecked() && age >= (66) && (dependencies < 1 && net() <= (201.50)))) {
+					if (single.isChecked() || !maried.isChecked()&& age <= (66) && (dependencies< 1 && net() <= 184 || maried.isChecked() &&  !single.isChecked() && age >= (66) && (dependencies < 1 && net() <= (201.50)))) {
 						Toast.makeText(getApplicationContext(), getString(R.string.entD1),
 								Toast.LENGTH_LONG).show();
-					} else if ((maried.isChecked() && !single.isChecked() && age <(66) && (dependencies < 1 && net() <= 164 || single.isChecked()&& !maried.isChecked ()&& age > (66) && (dependencies < 1 && net() <= (173.50))))){
+					} else if ((maried.isChecked() || !single.isChecked() && age <(66) && (dependencies < 1 && net() <= 164 || single.isChecked()&& !maried.isChecked ()&& age > (66) && (dependencies < 1 && net() <= (173.50))))){
 						Toast.makeText(getApplicationContext(), getString(R.string.entD2),
 								Toast.LENGTH_LONG).show();
-					} else if ((single.isChecked()||maried.isChecked() && age <(66) && (dependencies >0 && net() <= 266.50 && dependencies < 2 || single.isChecked()|| maried.isChecked() && age > (66) && (dependencies >0&& (dependencies <2 && net() <= (298)))))){
+					} else if ((single.isChecked()|| maried.isChecked() && age <(66) && (dependencies >0 && net() <= 266.50 && dependencies < 2 || single.isChecked()|| maried.isChecked() && age > (66) && (dependencies >0&& (dependencies <2 && net() <= (298)))))){
 						Toast.makeText(getApplicationContext(), getString(R.string.entD4),
 								Toast.LENGTH_LONG).show();
 					}
