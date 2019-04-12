@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi aplicación</string>
+    <string name="title_activity_form_gui">FormGUI</string>
+    <string name="large_text">
+
+    </string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- Tax GUI -->
+    <string name="WeekDet">Por favor ingrese sus detalles de pago semanal</string>
+    <string name="Hrs">Horas</string>
+    <string name="Rt">Tarifa</string>
+    <string name="H_I">Seguro de salud</string>
+    <string name="U_S">Suscripciones sindicales</string>
+    <string name="Over_H">Horas extras</string>
+    <string name="Tax_C">Crédito fiscal</string>
+    <string name="weekly_payment_calculation">Cálculo de pago semanal</string>
+    <string name="Mon_Cal">Cálculo del pago mensual</string>
+    <string name="Ann_Cal">Cálculo de pago anual</string>
+    <string name="cal">Calcular</string>
+
+    <!-- Tax Gui pop-ups -->
+    <string name="ti">Se ha añadido la siguiente información:</string>
+    <string name="tH">Horas:</string>
+    <string name="tRate">Tarifa:</string>
+    <string name="tHea">Seguro de salud:</string>
+    <string name="tUnion">Suscripción a la Unión:</string>
+    <string name="tTaxCredit">Crédito fiscal:</string>
+    <string name="tOver">A través del tiempo:</string>
+    <string name="tWeekly">Pago semanal:</string>
+    <string name="tMonthly">Mensualidad:</string>
+    <string name="tYearly">Pago anual:</string>
+    <string name="tOptions">Por favor seleccione de una de las opciones</string>
+    <string name="tNet">Salario neto:</string>
+
+
+
+    <!-- Rebate GUI -->
+    <string name="Check_reb">Anteriormente he reclamado mi reembolso de impuestos</string>
+    <string name="Employed_Y">He estado empleado durante todo el año</string>
+    <string name="Med_exp">He tenido gastos medicos</string>
+    <string name="Previous">Anteriormente he reclamado mi reembolso de impuestos</string>
+    <string name="Two_Jobs">Tengo dos o mas trabajos</string>
+    <string name="done">Hecho</string>
+    <string name="Emergency_Tax">Estoy / he estado en el impuesto de emergencia</string>
+
+    <!-- Form GUI -->
+    <string name="name">Nombre</string>
+    <string name="surname">Apellido</string>
+    <string name="add1">Dirección 1</string>
+    <string name="add2">Dirección 2</string>
+    <string name="add3">Dirección 3</string>
+    <string name="phone">Teléfono</string>
+    <string name="email">correo electrónico</string>
+    <string name="confirm_email">Confirmar correo electrónico</string>
+    <string name="msg">Su mensaje aquí</string>
+    <string name="sub">Enviar</string>
+    <string name="fCheck">Por favor revisa todos los campos</string>
+    <string name="fNotMatch">¡El email no coincide!</string>
+
+    <!-- End GUI -->
+    <string name="ThankYou">Gracias. Un miembro de nuestro equipo se pondrá en contacto con usted en breve para brindarle una actualización de su aplicación. ¡Gracias por usar TaxRite!</string>
+    <string name="exit">Salida</string>
+
+    <!-- Entitlement GUI -->
+    <string name="entitelement">Les droits</string>
+    <string name="single">Soltero</string>
+    <string name="maried">Casado</string>
+    <string name="working">Trabajando</string>
+    <string name="job_seeker">"Demandante de empleo"</string>
+    <string name="Depend">Dependencias</string>
+    <string name="age">Años</string>
+    <string name="checkE">Compruebe los derechos</string>
+    <string name="eLiving">¿Vives en Irlanda más de 3 años?</string>
+
+    <!-- Change Language Button -->
+    <string name="changeLang">Change Language</string>
+
+    <!-- Start Button -->
+    <string name="start">comienzo</string>
+
+
+    <!-- Entitlements GUI pop-ups -->
+    <string name="entD1">¡Buenas noticias! Parece que puede tener derecho a obtener una tarjeta médica según el esquema 1, solicite con el formulario proporcionado</string>
+    <string name="entD2">¡Buenas noticias! Parece que puede tener derecho a obtener una tarjeta médica según el esquema 2, solicítela con el formulario proporcionado</string>
+    <string name="entD3">basado en su ingreso neto</string>
+    <string name="entD4">¡Buenas noticias! Parece que podría tener derecho a obtener una tarjeta médica según el esquema 3, solicítela con el formulario proporcionado</string>
+    <string name="entD5">Lo sentimos, no tiene derecho a obtener una tarjeta médica, pero puede intentar obtener una tarjeta GP solamente.</string>
+    <string name="entD6">Usted tiene derecho a obtener un suplemento familiar para hacer su ingreso general semanal €521</string>
+    <string name="entD7">Usted tiene derecho a obtener un suplemento familiar para hacer su ingreso general semanal de € 622</string>
+    <string name="entD8">Usted tiene derecho a obtener un suplemento familiar para hacer su ingreso general semanal de € 622</string>
+    <string name="entD9">lo siento, sus circunstancias parecen un poco complejas, póngase en contacto con uno de su oficina social local, Gracias</string>
+    <string name="entD10">lo siento, sus circunstancias parecen un poco complejas, póngase en contacto con uno de su oficina social local, Gracias</string>
+    <string name="entD11">Usted tiene derecho a la prestación por hijo de € 140</string>
+    <string name="entD12">Usted tiene derecho a la prestación por hijo de € 280</string>
+    <string name="entD13">Usted tiene derecho a la prestación por hijo de € 420</string>
+    <string name="entD14">Usted tiene derecho a la prestación por hijo de € 560</string>
+    <string name="entD15">Usted tiene derecho a la prestación por hijo de € 700</string>
+    <string name="entD16">Usted tiene derecho a la prestación por hijo de € 840</string>
+    <string name="entD17">Los suplementos familiares aumentan simultáneamente 140 € por cada niño.</string>
+    <string name="entD18">También tiene derecho a SUSI, solicite en línea con sus documentos de respaldo</string>
+    <string name="entD19">Lo siento, parece que no tienes derecho para susi ya que no vives en Irlanda más de 3 años</string>
+    <string name="entD20">Si es un solicitante de empleo o si trabaja menos de 30 horas, tiene derecho a obtener un suplemento de alquiler.</string>
+    <string name="entD21">Lo siento, parece que no tiene derecho a un suplemento de alquiler ya que está trabajando a tiempo completo</string>
+
+
+
+
+</resources>
