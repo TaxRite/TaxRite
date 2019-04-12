@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -49,11 +50,21 @@ public static double netTest=0.0;
 
 
         butCalc.setOnClickListener(new View.OnClickListener() {
+
+
+
+
+
+
+
                                        Tax p = new Tax();
 
                                        //TextView result;
                                        @Override
                                        public void onClick(View view) {
+                                           AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(TestTaxGUI.this);
+                                           alertDialogBuilder.setMessage("Click on Image for tag");
+
                                            Double hour = Double.parseDouble(hours1.getText().toString());
                                            Double rate = Double.parseDouble(rate1.getText().toString());
                                            Double health = Double.parseDouble(health1.getText().toString());
@@ -75,6 +86,8 @@ public static double netTest=0.0;
                                                    Toast.LENGTH_LONG).show();
 
                                            if (radWeek.isChecked()) {
+
+
                                                if (Locale.getDefault().getLanguage().equals("en")) {
                                                    p.weekly();
 
@@ -93,34 +106,44 @@ public static double netTest=0.0;
                                                    Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
                                                            Toast.LENGTH_LONG).show();
                                                }
-                                           } else if (radMonth.isChecked()) {
+                                           }
+                                           else if (radMonth.isChecked()) {
                                                if (Locale.getDefault().getLanguage().equals("en")) {
+                                                   p.weekly();
                                                    p.monthly();
                                                    Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
                                                            Toast.LENGTH_LONG).show();
                                                }
                                                if (Locale.getDefault().getLanguage().equals("fr")) {
+                                                   p.weekly();
                                                    p.monthly();
                                                    Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
                                                            Toast.LENGTH_LONG).show();
                                                }
                                                if (Locale.getDefault().getLanguage().equals("es")) {
+                                                   p.weekly();
                                                    p.monthly();
                                                    Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
                                                            Toast.LENGTH_LONG).show();
                                                }
                                            } else if (radAnnu.isChecked()) {
                                                if (Locale.getDefault().getLanguage().equals("en")) {
+                                                   p.weekly();
+                                                   p.monthly();
                                                    p.annual();
                                                    Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
                                                            Toast.LENGTH_LONG).show();
                                                }
                                                if (Locale.getDefault().getLanguage().equals("fr")) {
+                                                   p.weekly();
+                                                   p.monthly();
                                                    p.annual();
                                                    Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
                                                            Toast.LENGTH_LONG).show();
                                                }
                                                if (Locale.getDefault().getLanguage().equals("es")) {
+                                                   p.weekly();
+                                                   p.monthly();
                                                    p.annual();
                                                    Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
                                                            Toast.LENGTH_LONG).show();
@@ -132,8 +155,7 @@ public static double netTest=0.0;
 
                                            }
                                            netTest = p.netpay();
-                                           Toast.makeText(getApplicationContext(), getString(R.string.tNet) + netTest,
-                                                   Toast.LENGTH_LONG).show();
+
 
                                            startActivity(new Intent(getApplicationContext(), EntitlementsGUI.class));
                                        }
