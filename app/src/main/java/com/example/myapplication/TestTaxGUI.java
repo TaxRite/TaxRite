@@ -123,7 +123,7 @@ public class TestTaxGUI extends AppCompatActivity {
 
                                                        })
 
-                                                               .setNegativeButton("Cancel", null);
+                                                               .setNegativeButton((getString(R.string.eCan)), null);
                                                        x2.setTitle(getString(R.string.ti) );
                                                        x2.setTitle(R.string.tWeekly);
                                                        AlertDialog alt3 =x2.create();
@@ -145,7 +145,7 @@ public class TestTaxGUI extends AppCompatActivity {
 
                                                        })
 
-                                                               .setNegativeButton("Cancel", null);
+                                                               .setNegativeButton((getString(R.string.eCan)), null);
                                                        x3.setTitle(getString(R.string.ti) );
                                                        x3.setTitle(R.string.tMonthly);
                                                        AlertDialog alt4 =x3.create();
@@ -166,7 +166,7 @@ public class TestTaxGUI extends AppCompatActivity {
 
                                                        })
 
-                                                               .setNegativeButton("Cancel", null);
+                                                               .setNegativeButton((getString(R.string.eCan)), null);
                                                        x4.setTitle(getString(R.string.ti) );;
                                                        x4.setTitle(R.string.tMonthly);
                                                        AlertDialog alt5 =x4.create();
@@ -187,7 +187,7 @@ public class TestTaxGUI extends AppCompatActivity {
 
                                                        })
 
-                                                               .setNegativeButton("Cancel", null);
+                                                               .setNegativeButton((getString(R.string.eCan)), null);
                                                        x5.setTitle(getString(R.string.ti) );
                                                        x5.setTitle(R.string.tMonthly);
                                                        AlertDialog alt6 =x5.create();
@@ -210,7 +210,7 @@ public class TestTaxGUI extends AppCompatActivity {
 
                                                        })
 
-                                                               .setNegativeButton("Cancel", null);
+                                                               .setNegativeButton((getString(R.string.eCan)), null);
                                                        x6.setTitle(getString(R.string.ti) );;
                                                        x6.setTitle(R.string.tYearly);
                                                        AlertDialog alt7 =x6.create();
@@ -232,7 +232,7 @@ public class TestTaxGUI extends AppCompatActivity {
 
                                                        })
 
-                                                               .setNegativeButton("Cancel", null);
+                                                               .setNegativeButton((getString(R.string.eCan)), null);
                                                        x7.setTitle(getString(R.string.ti) );;
                                                        x7.setTitle(R.string.tYearly);
                                                        AlertDialog alt8 =x7.create();
@@ -254,7 +254,7 @@ public class TestTaxGUI extends AppCompatActivity {
 
                                                        })
 
-                                                               .setNegativeButton("Cancel", null);
+                                                               .setNegativeButton((getString(R.string.eCan)), null);
                                                        x8.setTitle(getString(R.string.ti) );;
                                                        x8.setTitle(R.string.tYearly);
                                                        AlertDialog alt9 =x8.create();
@@ -279,7 +279,7 @@ public class TestTaxGUI extends AppCompatActivity {
 
                                                })
 
-                                                       .setNegativeButton("Cancel", null);
+                                                       .setNegativeButton((getString(R.string.eCan)), null);
                                                alertDialogBuilder.setTitle(getString(R.string.ti) );
                                                AlertDialog alt =alertDialogBuilder.create();
                                                alt.show();

@@ -29,12 +29,12 @@ public class RebateGUI extends AppCompatActivity {
             public void onClick(View v)
             {
                 if(c1.isChecked()||c2.isChecked()||c3.isChecked()||c4.isChecked()||c5.isChecked()){
-                        Toast.makeText(getApplicationContext(), "Good news! It seems that you might be entitled to get some money back!",
+                        Toast.makeText(getApplicationContext(), getString(R.string.rMsg1),
                                 Toast.LENGTH_LONG).show();
                 }
                 else{
                     for (int i=0; i < 2; i++) {
-                        Toast.makeText(getApplicationContext(), "I does not seem like you can get anything back, however, please fill out the form on the next screen and we will get one of our team member to double check that.",
+                        Toast.makeText(getApplicationContext(), getString(R.string.rMsg2),
                                 Toast.LENGTH_LONG).show();
                     }
                 }

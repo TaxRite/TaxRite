@@ -105,6 +105,7 @@
     <string name="Mon_Cal">Monthly payment calculation</string>
     <string name="Ann_Cal">Annual payment calculation</string>
     <string name="cal">Calculate</string>
+    <string name="tEnt">My Entitlements</string>
 
 
     <!-- Tax gui pop-ups -->
@@ -119,7 +120,7 @@
     <string name="tMonthly">Monthly payment is:</string>
     <string name="tYearly">Annual payment is:</string>
     <string name="tOptions">Please select from one of the options</string>
-    <string name="tNet">Net Pay:</string>
+    <string name="tNet">Your Net Payment:</string>
 
     <!-- Rebate GUI -->
     <string name="Check_reb">Please check boxes which are relevant to you in order to help us determine whether you are eligible for the tax rebate</string>
@@ -129,6 +130,10 @@
     <string name="Two_Jobs">I have two or more jobs</string>
     <string name="done">Done</string>
     <string name="Emergency_Tax">I am/have been on the emergency tax</string>
+
+    <!-- Rebate Pop-ups -->
+    <string name="rMsg1">Good news! It seems that you might be entitled to get some money back!</string>
+    <string name="rMsg2">It does not seem like you can get anything back, however, please fill out the form on the next screen and we will get one of our team member to double check that.</string>
 
     <!-- Form GUI -->
     <string name="name">Name</string>
@@ -170,10 +175,10 @@
     <string name="entD2">Good news! It seems that you might be entitled to get Medical card on based on scheme 2,please apply with form provided</string>
     <string name="entD3">based on your net income</string>
     <string name="entD4">Good news! It seems like you might be entitled to get Medical card on based on scheme 3,please apply with form provided</string>
-    <string name="entD5">sorry you are not entitled to get medical card but you may try for a GP card only</string>
-    <string name="entD6">you are entitled to get family supplement to make your weekly overall income €521</string>
-    <string name="entD7">you are entitled to get family supplement to make your weekly overall income €622</string>
-    <string name="entD8">you are entitled to get family supplement to make your weekly overall income €622</string>
+    <string name="entD5">Sorry you are not entitled to get medical card but you may try for a GP card only</string>
+    <string name="entD6">Good news!! you are entitled to get family supplement to make your total weekly income €521</string>
+    <string name="entD7">Good news!! you are entitled to get family supplement to make your total weekly income €622</string>
+    <string name="entD8">Good news!! you are entitled to get family supplement to make your total weekly income €723</string>
     <string name="entD9">sorry your circumstances seems bit complex please contact one of your local social office,Thanks</string>
     <string name="entD10">sorry your circumstances seems bit complex please contact one of your local social office,Thanks</string>
     <string name="entD11">You are entitled for child benefit of €140</string>
@@ -182,11 +187,20 @@
     <string name="entD14">You are entitled for child benefit of €560</string>
     <string name="entD15">You are entitled for child benefit of €700</string>
     <string name="entD16">You are entitled for child benefit of €840</string>
-    <string name="entD17">family supplements increase simultaneously €140 for every child</string>
-    <string name="entD18">You are also entitled for SUSI, please apply online with your supportive documents</string>
-    <string name="entD19">Sorry its seems like you are not entitle for susi as you are not living in ireland more than 3 years</string>
-    <string name="entD20">if you are a jobseeker or you working less than 30 hours you are entitlement to get rent supplement</string>
-    <string name="entD21">Sorry it seems like you are not entitled for rent supplement as you are working full time</string>
+    <string name="entD17">Child benefit increases 140 euro for every single child</string>
+    <string name="entD18">You are entitled to get the student grant, please apply online </string>
+    <string name="entD19">Sorry, you are not entitled to get the SUSI student grant</string>
+    <string name="entD20">You are entitled to get the rent supplement</string>
+    <string name="entD21">Sorry, you are not entitled to get the rent supplement</string>
+    <string name="famSup">Family supplement</string>
+    <string name="gNext">Go next</string>
+    <string name="eCan">Cancel</string>
+    <string name="gNews">Good news!! you are entitled to get a medical card</string>
+    <string name="mCard">Medical card</string>
+    <string name="eSoz">Sorry, it looks like you are not entitled for family supplement as your income is higher than required</string>
+    <string name="cBen">Child Benefit</string>
+    <string name="SUSI">SUSI</string>
+    <string name="rSup">Rent supplement</string>
 
 
 

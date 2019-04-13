@@ -184,9 +184,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 													aList2.add(e);
 
-													builder.setMessage("Your net payment="+net())
+													builder.setMessage(getString(R.string.tNet)+net())
 
-															.setPositiveButton("Go next", new DialogInterface.OnClickListener() {
+															.setPositiveButton(getString(R.string.gNext), new DialogInterface.OnClickListener() {
 
 																@Override
 
@@ -196,7 +196,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 															})
 
-															.setNegativeButton("Cancel", null);
+															.setNegativeButton(getString(R.string.eCan), null);
 
 													AlertDialog alert = builder.create();
 
@@ -208,9 +208,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a = new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a.setMessage(  "Good news!! you are entitle to get medical card");
+														a.setMessage(  getString(R.string.gNews));
 
-														a.setTitle("Medical card");
+														a.setTitle(getString(R.string.mCard));
 
 														AlertDialog alt1 =a.create();
 
@@ -220,9 +220,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a1 = new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a1.setMessage(  "Good news!! you are entitle to get medical card");
+														a1.setMessage(  getString(R.string.gNews));
 
-														a1.setTitle("Medical card");
+														a1.setTitle(getString(R.string.mCard));
 
 														AlertDialog alt2 =a1.create();
 
@@ -232,9 +232,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a3 = new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a3.setMessage(  "Good news!! you are entitle to get medical card");
+														a3.setMessage(  getString(R.string.gNews));
 
-														a3.setTitle("Medical card");
+														a3.setTitle(getString(R.string.mCard));
 
 														AlertDialog alt3 =a3.create();
 
@@ -248,9 +248,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 															AlertDialog.Builder a4 = new AlertDialog.Builder(EntitlementsGUI.this);
 
-															a4.setMessage(  "Sorry, it's seems like you are entitle for medical card this time but you may try for a GP card");
+															a4.setMessage(getString(R.string.entD5));
 
-															a4.setTitle("Medical card");
+															a4.setTitle(getString(R.string.mCard));
 
 															AlertDialog alt4 =a4.create();
 
@@ -264,9 +264,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a5= new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a5.setMessage(  "Good news!! you are entitle to get family supplement to make your total weekly income 521");
+														a5.setMessage(getString(R.string.entD6));
 
-														a5.setTitle("family supplement");
+														a5.setTitle(getString(R.string.famSup));
 
 														AlertDialog alt5 =a5.create();
 
@@ -278,9 +278,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a6= new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a6.setMessage(  "Good news!! you are entitle to get family supplement to make your total weekly income 622");
+														a6.setMessage(getString(R.string.entD7));
 
-														a6.setTitle("family supplement");
+														a6.setTitle(getString(R.string.famSup));
 
 														AlertDialog alt6 =a6.create();
 
@@ -292,9 +292,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a7= new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a7.setMessage(  "Good news!! you are entitle to get family supplement to make your total weekly income 723");
+														a7.setMessage(getString(R.string.entD8));
 
-														a7.setTitle("family supplement");
+														a7.setTitle(getString(R.string.famSup));
 
 														AlertDialog alt7 =a7.create();
 
@@ -306,9 +306,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a8= new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a8.setMessage( "Sorry, it's look like you are not entitle for family supplement as your income is higher than required ");
+														a8.setMessage( getString(R.string.eSoz));
 
-														a8.setTitle("family supplement");
+														a8.setTitle(getString(R.string.famSup));
 
 														AlertDialog alt8 =a8.create();
 
@@ -322,9 +322,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a9= new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a9.setMessage(  "You are entitle for child benefit of €140 ");
+														a9.setMessage(getString(R.string.entD11));
 
-														a9.setTitle("Child benefit");
+														a9.setTitle(getString(R.string.cBen));
 
 														AlertDialog alt9 =a9.create();
 
@@ -336,9 +336,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a10= new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a10.setMessage(  "You are entitle for child benefit of €280 ");
+														a10.setMessage(getString(R.string.entD12));
 
-														a10.setTitle("Child benefit");
+														a10.setTitle(getString(R.string.cBen));
 
 														AlertDialog alt10 =a10.create();
 
@@ -350,9 +350,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a11= new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a11.setMessage(  "You are entitle for child benefit of €420 ");
+														a11.setMessage(getString(R.string.entD13));
 
-														a11.setTitle("Child benefit");
+														a11.setTitle(getString(R.string.cBen));
 
 														AlertDialog alt11 =a11.create();
 
@@ -364,9 +364,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a12= new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a12.setMessage(  "Child benefit increase 140 euro for every single child ");
+														a12.setMessage(getString(R.string.entD17));
 
-														a12.setTitle("Child benefit");
+														a12.setTitle(getString(R.string.cBen));
 
 														AlertDialog alt12 =a12.create();
 
@@ -380,9 +380,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a13= new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a13.setMessage(  "You are entitle to get student grant, please apply online ");
+														a13.setMessage(getString(R.string.entD18));
 
-														a13.setTitle("SUSI");
+														a13.setTitle(getString(R.string.SUSI));
 
 														AlertDialog alt13 =a13.create();
 
@@ -394,9 +394,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a14= new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a14.setMessage(  "Sorry, you are not entitle to get SUSI");
+														a14.setMessage(getString(R.string.entD19));
 
-														a14.setTitle("SUSI");
+														a14.setTitle(getString(R.string.SUSI));
 
 														AlertDialog alt14 =a14.create();
 
@@ -410,9 +410,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a15= new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a15.setMessage(  "You are entitle to get rent supplement ");
+														a15.setMessage(getString(R.string.entD20));
 
-														a15.setTitle("Rent supplement");
+														a15.setTitle(getString(R.string.rSup));
 
 														AlertDialog alt15 =a15.create();
 
@@ -424,9 +424,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 
 														AlertDialog.Builder a16 = new AlertDialog.Builder(EntitlementsGUI.this);
 
-														a16.setMessage("Sorry, you are not entitle to get rent supplement ");
+														a16.setMessage(getString(R.string.entD21));
 
-														a16.setTitle("Rent supplement ");
+														a16.setTitle(getString(R.string.rSup));
 
 														AlertDialog alt16 = a16.create();
 

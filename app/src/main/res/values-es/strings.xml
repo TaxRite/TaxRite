@@ -20,6 +20,7 @@
     <string name="Mon_Cal">Cálculo del pago mensual</string>
     <string name="Ann_Cal">Cálculo de pago anual</string>
     <string name="cal">Calcular</string>
+    <string name="tEnt">Mis derechos</string>
 
     <!-- Tax Gui pop-ups -->
     <string name="ti">Se ha añadido la siguiente información:</string>
@@ -33,7 +34,7 @@
     <string name="tMonthly">Mensualidad:</string>
     <string name="tYearly">Pago anual:</string>
     <string name="tOptions">Por favor seleccione de una de las opciones</string>
-    <string name="tNet">Salario neto:</string>
+    <string name="tNet">Su pago neto:</string>
 
 
 
@@ -45,6 +46,10 @@
     <string name="Two_Jobs">Tengo dos o mas trabajos</string>
     <string name="done">Hecho</string>
     <string name="Emergency_Tax">Estoy / he estado en el impuesto de emergencia</string>
+
+    <!-- Rebate Pop-ups -->
+    <string name="rMsg1">¡Buenas noticias! ¡Parece que podrías tener derecho a recuperar algo de dinero!</string>
+    <string name="rMsg2">No parece que pueda recuperar nada, sin embargo, complete el formulario en la siguiente pantalla y un miembro de nuestro equipo lo revisará.</string>
 
     <!-- Form GUI -->
     <string name="name">Nombre</string>
@@ -76,7 +81,7 @@
     <string name="eLiving">¿Vives en Irlanda más de 3 años?</string>
 
     <!-- Change Language Button -->
-    <string name="changeLang">Change Language</string>
+    <string name="changeLang">Cambiar idioma</string>
 
     <!-- Start Button -->
     <string name="start">comienzo</string>
@@ -87,10 +92,10 @@
     <string name="entD2">¡Buenas noticias! Parece que puede tener derecho a obtener una tarjeta médica según el esquema 2, solicítela con el formulario proporcionado</string>
     <string name="entD3">basado en su ingreso neto</string>
     <string name="entD4">¡Buenas noticias! Parece que podría tener derecho a obtener una tarjeta médica según el esquema 3, solicítela con el formulario proporcionado</string>
-    <string name="entD5">Lo sentimos, no tiene derecho a obtener una tarjeta médica, pero puede intentar obtener una tarjeta GP solamente.</string>
-    <string name="entD6">Usted tiene derecho a obtener un suplemento familiar para hacer su ingreso general semanal €521</string>
-    <string name="entD7">Usted tiene derecho a obtener un suplemento familiar para hacer su ingreso general semanal de € 622</string>
-    <string name="entD8">Usted tiene derecho a obtener un suplemento familiar para hacer su ingreso general semanal de € 622</string>
+    <string name="entD5">Lo sentimos, no tiene derecho a obtener una tarjeta médica, pero puede intentar obtener solo una tarjeta GP</string>
+    <string name="entD6">¡¡Buenas noticias!! Usted tiene derecho a obtener un suplemento familiar para hacer su ingreso semanal total € 521</string>
+    <string name="entD7">¡¡Buenas noticias!! Usted tiene derecho a obtener un suplemento familiar para hacer su ingreso semanal total € 622</string>
+    <string name="entD8">¡¡Buenas noticias!! Usted tiene derecho a obtener un suplemento familiar para hacer su ingreso semanal total de € 723</string>
     <string name="entD9">lo siento, sus circunstancias parecen un poco complejas, póngase en contacto con uno de su oficina social local, Gracias</string>
     <string name="entD10">lo siento, sus circunstancias parecen un poco complejas, póngase en contacto con uno de su oficina social local, Gracias</string>
     <string name="entD11">Usted tiene derecho a la prestación por hijo de € 140</string>
@@ -99,13 +104,20 @@
     <string name="entD14">Usted tiene derecho a la prestación por hijo de € 560</string>
     <string name="entD15">Usted tiene derecho a la prestación por hijo de € 700</string>
     <string name="entD16">Usted tiene derecho a la prestación por hijo de € 840</string>
-    <string name="entD17">Los suplementos familiares aumentan simultáneamente 140 € por cada niño.</string>
-    <string name="entD18">También tiene derecho a SUSI, solicite en línea con sus documentos de respaldo</string>
-    <string name="entD19">Lo siento, parece que no tienes derecho para susi ya que no vives en Irlanda más de 3 años</string>
-    <string name="entD20">Si es un solicitante de empleo o si trabaja menos de 30 horas, tiene derecho a obtener un suplemento de alquiler.</string>
+    <string name="entD17">La prestación por hijo aumenta 140 euros por cada niño</string>
+    <string name="entD18">Usted tiene derecho a obtener la beca de estudiante, solicite en línea</string>
+    <string name="entD19">Lo sentimos, no tienes derecho a obtener la beca de estudiante SUSI</string>
+    <string name="entD20">Usted tiene derecho a obtener el suplemento de alquiler</string>
     <string name="entD21">Lo siento, parece que no tiene derecho a un suplemento de alquiler ya que está trabajando a tiempo completo</string>
-
-
+    <string name="famSup">Suplemento familiar</string>
+    <string name="gNext">Siguiente</string>
+    <string name="eCan">Cancelar</string>
+    <string name="gNews">¡¡Buenas noticias!! tienes derecho a obtener una tarjeta médica</string>
+    <string name="mCard">Tarjeta médica</string>
+    <string name="eSoz">Lo sentimos, parece que no tiene derecho a un suplemento familiar ya que sus ingresos son más altos que los requeridos</string>
+    <string name="cBen">Beneficio infantil</string>
+    <string name="SUSI">SUSI</string>
+    <string name="rSup">Suplemento de alquiler</string>
 
 
 </resources>

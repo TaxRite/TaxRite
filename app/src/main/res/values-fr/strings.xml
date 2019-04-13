@@ -22,6 +22,7 @@
     <string name="Mon_Cal">Calcul du paiement mensuel</string>
     <string name="Ann_Cal">Calcul du paiement annuel</string>
     <string name="cal">Calculer</string>
+    <string name="tEnt">Mes droits</string>
 
 
     <!-- Tax Gui Pop-ups -->
@@ -47,6 +48,10 @@
     <string name="Two_Jobs">J\'ai deux emplois ou plus</string>
     <string name="done">Terminé</string>
     <string name="Emergency_Tax">"Je suis ou j\'ai déjà payé la taxe d'urgence"</string>
+
+    <!-- Rebate Pop-ups -->
+    <string name="rMsg1">Bonnes nouvelles! Il semble que vous ayez peut-être le droit de récupérer de l\'argent!</string>
+    <string name="rMsg2">Il ne semble pas que vous puissiez obtenir quoi que ce soit, cependant, veuillez remplir le formulaire à l\'écran suivant et nous ferons vérifier par un membre de notre équipe.</string>
 
     <!-- Form GUI -->
     <string name="name">prénom</string>
@@ -90,9 +95,9 @@
     <string name="entD3">basé sur votre revenu net</string>
     <string name="entD4">Bonnes nouvelles! Il semble que vous ayez peut-être le droit d\'obtenir une carte médicale sur la base du schéma 3, merci de postuler avec le formulaire fourni.</string>
     <string name="entD5">désolé vous n\'êtes pas autorisé à obtenir une carte médicale mais vous pouvez essayer pour une carte de généraliste seulement</string>
-    <string name="entD6">vous avez droit à un complément familial pour que votre revenu hebdomadaire global soit de 521 €</string>
-    <string name="entD7">vous avez droit à un complément familial pour que votre revenu hebdomadaire global soit de 622 €</string>
-    <string name="entD8">vous avez droit à un complément familial pour que votre revenu hebdomadaire global soit de 622 €</string>
+    <string name="entD6">Bonnes nouvelles!! vous avez droit à un complément familial pour que votre revenu hebdomadaire total atteigne 521 €</string>
+    <string name="entD7">Bonnes nouvelles!! vous avez droit à un complément familial pour que votre revenu hebdomadaire total atteigne 622 €</string>
+    <string name="entD8">Bonnes nouvelles!! vous avez droit à un complément familial pour que votre revenu hebdomadaire total atteigne 723 €</string>
     <string name="entD9">désolé votre situation semble un peu complexe s\'il vous plaît contacter l\'un de votre bureau social local, Merci</string>
     <string name="entD10">désolé votre situation semble un peu complexe s\'il vous plaît contacter l\'un de votre bureau social local, Merci</string>
     <string name="entD11">Vous avez droit à une allocation pour enfant de 140 €</string>
@@ -101,13 +106,19 @@
     <string name="entD14">Vous avez droit à une allocation pour enfant de 560 €</string>
     <string name="entD15">Vous avez droit à une allocation pour enfant de 700 €</string>
     <string name="entD16">Vous avez droit à une allocation pour enfant de 840 €</string>
-    <string name="entD17">les suppléments familiaux augmentent simultanément de 140 € pour chaque enfant</string>
-    <string name="entD18">Vous avez également droit à SUSI, veuillez postuler en ligne avec vos documents justificatifs.</string>
-    <string name="entD19">Désolé, il semble que vous n\'ayez pas droit à un susi, car vous ne vivez pas en Irlande plus de 3 ans.</string>
-    <string name="entD20">si vous êtes un demandeur d\'emploi ou si vous travaillez moins de 30 heures, vous avez droit à un supplément de loyer</string>
-    <string name="entD21">Désolé, il semble que vous n’ayez pas droit au supplément au loyer, car vous travaillez à temps plein.</string>
-
-
-
+    <string name="entD17">Les allocations familiales augmentent de 140 euros pour chaque enfant</string>
+    <string name="entD18">Vous avez le droit d\'obtenir la bourse d\'étude, veuillez postuler en ligne</string>
+    <string name="entD19">Désolé, vous n\’avez pas le droit d\’obtenir la bourse d’études SUSI</string>
+    <string name="entD20">Vous avez droit au supplément de loyer</string>
+    <string name="entD21">Désolé, vous n\'êtes pas autorisé à recevoir le supplément au loyer</string>
+    <string name="famSup">Supplément famille</string>
+    <string name="gNext">Allez ensuite</string>
+    <string name="eCan">Annuler</string>
+    <string name="gNews">Bonnes nouvelles!! vous avez droit à une carte médicale</string>
+    <string name="mCard">Carte médicale</string>
+    <string name="eSoz">Désolé, il semblerait que vous n\'ayez pas droit au supplément familial, car votre revenu est supérieur au minimum requis.</string>
+    <string name="cBen">Allocation familiale</string>
+    <string name="SUSI">SUSI</string>
+    <string name="rSup">Supplément de loyer</string>
 
 </resources>
