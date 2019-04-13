@@ -85,16 +85,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                p.setOverTime(overtime);
                                                aList.add(p);
 
-                                               AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(TestTaxGUI.this);
-                                               alertDialogBuilder.setMessage( "\n" + getString(R.string.tH) + hour + "\n" + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
-                                                       + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime);
-                                               alertDialogBuilder.setTitle(getString(R.string.ti) );
-                                               AlertDialog alt =alertDialogBuilder.create();
-                                               alt.show();
-                                               //Toast.makeText(getApplicationContext(), getString(R.string.ti) + "\n" + getString(R.string.tH) + hour + "\n"
-                                               // + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
-                                               // + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime,
-                                               // Toast.LENGTH_LONG).show();
+
 
                                                if (radWeek.isChecked()) {
 
@@ -107,8 +98,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        AlertDialog alt1 =x.create();
                                                        alt1.show();
 
-                                                       //  Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
-                                                       //  Toast.LENGTH_LONG).show();
+
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("fr")) {
                                                        p.weekly();
@@ -117,8 +107,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x1.setTitle(R.string.tWeekly);
                                                        AlertDialog alt2 =x1.create();
                                                        alt2.show();
-                                                       //  Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
-                                                       // Toast.LENGTH_LONG).show();
+
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("es")) {
                                                        p.weekly();
@@ -127,8 +116,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x2.setTitle(R.string.tWeekly);
                                                        AlertDialog alt3 =x2.create();
                                                        alt3.show();
-                                                       // Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
-                                                       // Toast.LENGTH_LONG).show();
+
                                                    }
                                                } else if (radMonth.isChecked()) {
                                                    if (Locale.getDefault().getLanguage().equals("en")) {
@@ -139,8 +127,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x3.setTitle(R.string.tMonthly);
                                                        AlertDialog alt4 =x3.create();
                                                        alt4.show();
-                                                       // Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
-                                                       //  Toast.LENGTH_LONG).show();
+
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("fr")) {
                                                        p.weekly();
@@ -150,8 +137,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x4.setTitle(R.string.tMonthly);
                                                        AlertDialog alt5 =x4.create();
                                                        alt5.show();
-                                                       // Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
-                                                       //  Toast.LENGTH_LONG).show();
+
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("es")) {
                                                        p.weekly();
@@ -161,8 +147,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x5.setTitle(R.string.tMonthly);
                                                        AlertDialog alt6 =x5.create();
                                                        alt6.show();
-                                                       // Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
-                                                       //  Toast.LENGTH_LONG).show();
+
                                                    }
                                                } else if (radAnnu.isChecked()) {
                                                    if (Locale.getDefault().getLanguage().equals("en")) {
@@ -174,8 +159,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x6.setTitle(R.string.tYearly);
                                                        AlertDialog alt7 =x6.create();
                                                        alt7.show();
-                                                       // Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
-                                                       //  Toast.LENGTH_LONG).show();
+
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("fr")) {
                                                        p.weekly();
@@ -186,8 +170,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x7.setTitle(R.string.tYearly);
                                                        AlertDialog alt8 =x7.create();
                                                        alt8.show();
-                                                       //Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
-                                                       //    Toast.LENGTH_LONG).show();
+
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("es")) {
                                                        p.weekly();
@@ -206,10 +189,16 @@ public class TestTaxGUI extends AppCompatActivity {
                                                    }
 
                                                }
+                                               AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(TestTaxGUI.this);
+                                               alertDialogBuilder.setMessage( "\n" + getString(R.string.tH) + hour + "\n" + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
+                                                       + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime);
+                                               alertDialogBuilder.setTitle(getString(R.string.ti) );
+                                               AlertDialog alt =alertDialogBuilder.create();
+                                               alt.show();
                                                netTest = p.netpay();
 
 
-                                              // startActivity(new Intent(getApplicationContext(), EntitlementsGUI.class));
+
 
 
                                            }
@@ -226,7 +215,6 @@ public class TestTaxGUI extends AppCompatActivity {
 
 
 
-///??????
 
 
         );
