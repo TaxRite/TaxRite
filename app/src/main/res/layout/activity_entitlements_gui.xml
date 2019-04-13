@@ -17,78 +17,96 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			app:srcCompat="@drawable/logo" />
-
-		<CheckBox
-			android:id="@+id/cbsingle"
+		<RadioGroup
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_margin="20dp"
-			android:background="@android:color/holo_orange_light"
-			android:hint="@string/single" />
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="20dp">
 
-		<CheckBox
-			android:id="@+id/cbmaried"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_margin="20dp"
-			android:background="@android:color/holo_orange_light"
-			android:hint="@string/maried" />
+			<RadioButton
+				android:id="@+id/rbsingle"
+				android:layout_width="333dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_margin="10dp"
+				android:hint="Single"
+				android:background="@android:color/holo_orange_light" />
 
-		<CheckBox
-			android:id="@+id/cbworking"
+			<RadioButton
+				android:id="@+id/rbmaried"
+				android:layout_width="329dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_margin="10dp"
+				android:hint="Married"
+				android:background="@android:color/holo_orange_light" />
+		
+		<RadioGroup
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_margin="20dp"
-			android:background="@android:color/holo_orange_light"
-			android:hint="@string/working" />
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="20dp">
 
-		<CheckBox
-			android:id="@+id/cbjseeker"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_margin="20dp"
-			android:background="@android:color/holo_orange_light"
-			android:hint="@string/job_seeker" />
+			<RadioButton
+				android:id="@+id/rbworking"
+				android:layout_width="348dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_margin="10dp"
+				android:hint="Working"
+				android:background="@android:color/holo_orange_light" />
 
-		<CheckBox
-			android:id="@+id/ckbresidence"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_margin="20dp"
-			android:background="@android:color/holo_orange_light"
-			android:hint="@string/eLiving" />
+			<RadioButton
+				android:id="@+id/rbjseeker"
+				android:layout_width="343dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_margin="10dp"
+				android:hint="Job Seeker"
+				android:background="@android:color/holo_orange_light" />
 
-		<EditText
-			android:id="@+id/txtage"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_margin="20dp"
-			android:background="@android:color/holo_orange_light"
-			android:ems="10"
-			android:hint="@string/age"
-			android:inputType="number" />
+			<EditText
+				android:id="@+id/txtage"
+				android:layout_width="369dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:background="@android:color/holo_orange_light"
+				android:hint="@string/age"
+				android:inputType="number" />
 
-		<EditText
-			android:id="@+id/txtdependencies"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_margin="20dp"
-			android:background="@android:color/holo_orange_light"
-			android:ems="10"
-			android:hint="@string/Depend"
-			android:inputType="number" />
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+			<EditText
+				android:id="@+id/txtdependencies"
+				android:layout_width="369dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:background="@android:color/holo_orange_light"
+				android:hint="@string/Depend"
+				android:inputType="number" />
+
+			<CheckBox
+				android:id="@+id/ckbresidence"
+				android:layout_width="369dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_margin="10dp"
+				android:hint="Are you living in Ireland over 3 years"
+				android:background="@android:color/holo_orange_light" />
+			
+			
+			
 		<Button
 			android:id="@+id/btnclick"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-			android:layout_marginTop="20dp"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="10dp"
 			android:hint="@string/checkE" />
-        </RelativeLayout>
-
+		<Button
+			android:id="@+id/next"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="10dp"
+			android:hint="Check Taxrebate"/>
+		</RadioGroup>
+		</RadioGroup>
 	</LinearLayout>
 </ScrollView>
