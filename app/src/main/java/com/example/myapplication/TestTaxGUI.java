@@ -255,7 +255,7 @@ public class TestTaxGUI extends AppCompatActivity {
 
     public void openEntitlmentsGUI(){
 
-        Intent intent= new Intent(this,RebateGUI.class);
+        Intent intent= new Intent(this,EntitlementsGUI.class);
 
         startActivity(intent);
 
