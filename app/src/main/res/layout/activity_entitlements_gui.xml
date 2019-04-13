@@ -18,20 +18,11 @@
 			android:layout_height="wrap_content"
 			app:srcCompat="@drawable/logo" />
 
-		<TextView
-			android:layout_margin="20dp"
-			android:id="@+id/textView2"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Please thick the options which are applicable to you"
-			android:textColor="@android:color/holo_orange_dark"
-			android:textSize="18sp" />
-
 		<CheckBox
 			android:id="@+id/cbsingle"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10dp"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
 			android:hint="@string/single" />
 
@@ -39,7 +30,7 @@
 			android:id="@+id/cbmaried"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10dp"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
 			android:hint="@string/maried" />
 
@@ -47,7 +38,7 @@
 			android:id="@+id/cbworking"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10dp"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
 			android:hint="@string/working" />
 
@@ -55,7 +46,7 @@
 			android:id="@+id/cbjseeker"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10dp"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
 			android:hint="@string/job_seeker" />
 
@@ -63,15 +54,15 @@
 			android:id="@+id/ckbresidence"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10dp"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
-			android:hint="Living in Ireland over 3 years" />
+			android:hint="@string/eLiving" />
 
 		<EditText
 			android:id="@+id/txtage"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10dp"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
 			android:ems="10"
 			android:hint="@string/age"
@@ -81,7 +72,7 @@
 			android:id="@+id/txtdependencies"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10dp"
+			android:layout_margin="20dp"
 			android:background="@android:color/holo_orange_light"
 			android:ems="10"
 			android:hint="@string/Depend"
@@ -89,22 +80,14 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-			<Button
-				android:id="@+id/btnclick"
-				android:layout_width="365dp"
-				android:layout_height="wrap_content"
-				android:layout_alignParentStart="true"
-				android:layout_alignParentLeft="true"
-				android:layout_alignParentEnd="true"
-				android:layout_alignParentRight="true"
-				android:layout_centerVertical="true"
-				android:layout_marginStart="27dp"
-				android:layout_marginLeft="27dp"
-				android:layout_marginTop="20dp"
-				android:layout_marginEnd="19dp"
-				android:layout_marginRight="19dp"
-				android:hint="@string/checkE" />
+		<Button
+			android:id="@+id/btnclick"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+			android:layout_marginTop="20dp"
+			android:hint="@string/checkE" />
         </RelativeLayout>
 
 	</LinearLayout>
