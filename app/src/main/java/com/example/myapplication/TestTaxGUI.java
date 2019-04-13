@@ -67,9 +67,7 @@ public static double netTest=0.0;
                                                        Toast.LENGTH_LONG).show();
                                            }
                                            else {
-                                         /*  AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(TestTaxGUI.this);
-                                           alertDialogBuilder.setMessage("Alert ");
-                                           alertDialogBuilder.setTitle("Alert ");*/
+
 
 
                                                Double hour = Double.parseDouble(hours1.getText().toString());
@@ -85,13 +83,16 @@ public static double netTest=0.0;
                                                p.setOverTime(overtime);
                                                aList.add(p);
 
-
-                                               Toast.makeText(getApplicationContext(), getString(R.string.ti) + "\n" + getString(R.string.tH) + hour + "\n"
-                                                               + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
-                                                               + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime,
-
-
-                                                       Toast.LENGTH_LONG).show();
+                                               AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(TestTaxGUI.this);
+                                               alertDialogBuilder.setMessage(getString(R.string.ti) + "\n" + getString(R.string.tH) + hour + "\n" + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
+                                                       + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime);
+                                               alertDialogBuilder.setTitle(" user financial information ");
+                                               AlertDialog alt =alertDialogBuilder.create();
+                                               alt.show();
+                                               //Toast.makeText(getApplicationContext(), getString(R.string.ti) + "\n" + getString(R.string.tH) + hour + "\n"
+                                                              // + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
+                                                              // + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime,
+                                               // Toast.LENGTH_LONG).show();
 
                                                if (radWeek.isChecked()) {
 
