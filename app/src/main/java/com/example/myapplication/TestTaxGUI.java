@@ -62,104 +62,128 @@ public static double netTest=0.0;
                                        //TextView result;
                                        @Override
                                        public void onClick(View view) {
-                                           AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(TestTaxGUI.this);
-                                           alertDialogBuilder.setMessage("Click on Image for tag");
-
-                                           Double hour = Double.parseDouble(hours1.getText().toString());
-                                           Double rate = Double.parseDouble(rate1.getText().toString());
-                                           Double health = Double.parseDouble(health1.getText().toString());
-                                           Double union = Double.parseDouble(union1.getText().toString());
-                                           Double taxcredit = Double.parseDouble(taxcredit1.getText().toString());
-                                           Double overtime = Double.parseDouble(overtime1.getText().toString());
-
-                                           p.setHours(hour);
-                                           p.setRate(rate);
-                                           p.setTaxCredit(taxcredit);
-                                           p.setOverTime(overtime);
-                                           aList.add(p);
-
-                                           Toast.makeText(getApplicationContext(), getString(R.string.ti) + "\n" + getString(R.string.tH) + hour + "\n"
-                                                           + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
-                                                           + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime,
-
-
-                                                   Toast.LENGTH_LONG).show();
-
-                                           if (radWeek.isChecked()) {
-
-
-                                               if (Locale.getDefault().getLanguage().equals("en")) {
-                                                   p.weekly();
-
-                                                   Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
-                                                           Toast.LENGTH_LONG).show();
-                                               }
-                                               if (Locale.getDefault().getLanguage().equals("fr")) {
-                                                   p.weekly();
-
-                                                   Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
-                                                           Toast.LENGTH_LONG).show();
-                                               }
-                                               if (Locale.getDefault().getLanguage().equals("es")) {
-                                                   p.weekly();
-
-                                                   Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
-                                                           Toast.LENGTH_LONG).show();
-                                               }
+                                           if(hours1.getText().toString().equals("")||union1.getText().toString().equals("")||taxcredit1.getText().toString().equals("")||overtime1.getText().toString().equals("")||health1.getText().toString().equals("")||overtime1.getText().toString().equals("")){
+                                               Toast.makeText(getApplicationContext(), getString(R.string.fCheck),
+                                                       Toast.LENGTH_LONG).show();
                                            }
-                                           else if (radMonth.isChecked()) {
-                                               if (Locale.getDefault().getLanguage().equals("en")) {
-                                                   p.weekly();
-                                                   p.monthly();
-                                                   Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
-                                                           Toast.LENGTH_LONG).show();
+                                           else {
+                                         /*  AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(TestTaxGUI.this);
+                                           alertDialogBuilder.setMessage("Alert ");
+                                           alertDialogBuilder.setTitle("Alert ");*/
+
+
+                                               Double hour = Double.parseDouble(hours1.getText().toString());
+                                               Double rate = Double.parseDouble(rate1.getText().toString());
+                                               Double health = Double.parseDouble(health1.getText().toString());
+                                               Double union = Double.parseDouble(union1.getText().toString());
+                                               Double taxcredit = Double.parseDouble(taxcredit1.getText().toString());
+                                               Double overtime = Double.parseDouble(overtime1.getText().toString());
+
+                                               p.setHours(hour);
+                                               p.setRate(rate);
+                                               p.setTaxCredit(taxcredit);
+                                               p.setOverTime(overtime);
+                                               aList.add(p);
+
+
+                                               Toast.makeText(getApplicationContext(), getString(R.string.ti) + "\n" + getString(R.string.tH) + hour + "\n"
+                                                               + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
+                                                               + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime,
+
+
+                                                       Toast.LENGTH_LONG).show();
+
+                                               if (radWeek.isChecked()) {
+
+
+                                                   if (Locale.getDefault().getLanguage().equals("en")) {
+                                                       p.weekly();
+
+                                                       Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
+                                                               Toast.LENGTH_LONG).show();
+                                                   }
+                                                   if (Locale.getDefault().getLanguage().equals("fr")) {
+                                                       p.weekly();
+
+                                                       Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
+                                                               Toast.LENGTH_LONG).show();
+                                                   }
+                                                   if (Locale.getDefault().getLanguage().equals("es")) {
+                                                       p.weekly();
+
+                                                       Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
+                                                               Toast.LENGTH_LONG).show();
+                                                   }
+                                               } else if (radMonth.isChecked()) {
+                                                   if (Locale.getDefault().getLanguage().equals("en")) {
+                                                       p.weekly();
+                                                       p.monthly();
+                                                       Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
+                                                               Toast.LENGTH_LONG).show();
+                                                   }
+                                                   if (Locale.getDefault().getLanguage().equals("fr")) {
+                                                       p.weekly();
+                                                       p.monthly();
+                                                       Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
+                                                               Toast.LENGTH_LONG).show();
+                                                   }
+                                                   if (Locale.getDefault().getLanguage().equals("es")) {
+                                                       p.weekly();
+                                                       p.monthly();
+                                                       Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
+                                                               Toast.LENGTH_LONG).show();
+                                                   }
+                                               } else if (radAnnu.isChecked()) {
+                                                   if (Locale.getDefault().getLanguage().equals("en")) {
+                                                       p.weekly();
+                                                       p.monthly();
+                                                       p.annual();
+                                                       Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
+                                                               Toast.LENGTH_LONG).show();
+                                                   }
+                                                   if (Locale.getDefault().getLanguage().equals("fr")) {
+                                                       p.weekly();
+                                                       p.monthly();
+                                                       p.annual();
+                                                       Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
+                                                               Toast.LENGTH_LONG).show();
+                                                   }
+                                                   if (Locale.getDefault().getLanguage().equals("es")) {
+                                                       p.weekly();
+                                                       p.monthly();
+                                                       p.annual();
+                                                       Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
+                                                               Toast.LENGTH_LONG).show();
+                                                   } else {
+                                                       Toast.makeText(getApplicationContext(), getString(R.string.tOptions),
+                                                               Toast.LENGTH_LONG).show();
+                                                   }
+
                                                }
-                                               if (Locale.getDefault().getLanguage().equals("fr")) {
-                                                   p.weekly();
-                                                   p.monthly();
-                                                   Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
-                                                           Toast.LENGTH_LONG).show();
-                                               }
-                                               if (Locale.getDefault().getLanguage().equals("es")) {
-                                                   p.weekly();
-                                                   p.monthly();
-                                                   Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
-                                                           Toast.LENGTH_LONG).show();
-                                               }
-                                           } else if (radAnnu.isChecked()) {
-                                               if (Locale.getDefault().getLanguage().equals("en")) {
-                                                   p.weekly();
-                                                   p.monthly();
-                                                   p.annual();
-                                                   Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
-                                                           Toast.LENGTH_LONG).show();
-                                               }
-                                               if (Locale.getDefault().getLanguage().equals("fr")) {
-                                                   p.weekly();
-                                                   p.monthly();
-                                                   p.annual();
-                                                   Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
-                                                           Toast.LENGTH_LONG).show();
-                                               }
-                                               if (Locale.getDefault().getLanguage().equals("es")) {
-                                                   p.weekly();
-                                                   p.monthly();
-                                                   p.annual();
-                                                   Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
-                                                           Toast.LENGTH_LONG).show();
-                                               }
-                                               else {
-                                                   Toast.makeText(getApplicationContext(), getString(R.string.tOptions),
-                                                           Toast.LENGTH_LONG).show();
-                                               }
+                                               netTest = p.netpay();
+
+
+                                               startActivity(new Intent(getApplicationContext(), EntitlementsGUI.class));
+
 
                                            }
-                                           netTest = p.netpay();
 
 
-                                           startActivity(new Intent(getApplicationContext(), EntitlementsGUI.class));
+
+
+
+
+
                                        }
                                    }
+
+
+
+
+
+
+
+
 
         );
 

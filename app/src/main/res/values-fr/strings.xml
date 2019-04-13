@@ -68,7 +68,7 @@
 
     <!-- Entitlement GUI -->
     <string name="entitelement">Derechos</string>
-    <string name="single">Unique</string>
+    <string name="single">célibataire</string>
     <string name="maried">Marié</string>
     <string name="working">Travail</string>
     <string name="job_seeker">Chercheur d\'emploi</string>
