@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -191,7 +192,17 @@ public class TestTaxGUI extends AppCompatActivity {
                                                }
                                                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(TestTaxGUI.this);
                                                alertDialogBuilder.setMessage( "\n" + getString(R.string.tH) + hour + "\n" + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
-                                                       + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime);
+                                                       + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime).setPositiveButton("Go next", new DialogInterface.OnClickListener() {
+
+                                                   @Override
+
+                                                   public void onClick(DialogInterface dialog, int which) {
+
+                                                   }
+
+                                               })
+
+                                                       .setNegativeButton("Cancel", null);
                                                alertDialogBuilder.setTitle(getString(R.string.ti) );
                                                AlertDialog alt =alertDialogBuilder.create();
                                                alt.show();
