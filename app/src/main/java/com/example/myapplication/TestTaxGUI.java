@@ -113,7 +113,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                    if (Locale.getDefault().getLanguage().equals("es")) {
                                                        p.weekly();
                                                        AlertDialog.Builder x2 = new AlertDialog.Builder(TestTaxGUI.this);
-                                                       x2.setMessage(  aList.get(aList.size() - 1).weekly()).setPositiveButton("Go next", new DialogInterface.OnClickListener() {
+                                                       x2.setMessage(  aList.get(aList.size() - 1).weekly()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
 
@@ -135,7 +135,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        p.weekly();
                                                        p.monthly();
                                                        AlertDialog.Builder x3 = new AlertDialog.Builder(TestTaxGUI.this);
-                                                       x3.setMessage(  aList.get(aList.size() - 1).monthly()).setPositiveButton("Go next", new DialogInterface.OnClickListener() {
+                                                       x3.setMessage(  aList.get(aList.size() - 1).monthly()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
 
@@ -156,7 +156,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        p.weekly();
                                                        p.monthly();
                                                        AlertDialog.Builder x4 = new AlertDialog.Builder(TestTaxGUI.this);
-                                                       x4.setMessage(  aList.get(aList.size() - 1).monthly()).setPositiveButton("Go next", new DialogInterface.OnClickListener() {
+                                                       x4.setMessage(  aList.get(aList.size() - 1).monthly()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
 
@@ -177,7 +177,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        p.weekly();
                                                        p.monthly();
                                                        AlertDialog.Builder x5 = new AlertDialog.Builder(TestTaxGUI.this);
-                                                       x5.setMessage(  aList.get(aList.size() - 1).monthly()).setPositiveButton("Go next", new DialogInterface.OnClickListener() {
+                                                       x5.setMessage(  aList.get(aList.size() - 1).monthly()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
 
@@ -200,7 +200,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        p.monthly();
                                                        p.annual();
                                                        AlertDialog.Builder x6 = new AlertDialog.Builder(TestTaxGUI.this);
-                                                       x6.setMessage(  aList.get(aList.size() - 1).annual()).setPositiveButton("Go next", new DialogInterface.OnClickListener() {
+                                                       x6.setMessage(  aList.get(aList.size() - 1).annual()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
 
@@ -222,7 +222,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        p.monthly();
                                                        p.annual();
                                                        AlertDialog.Builder x7 = new AlertDialog.Builder(TestTaxGUI.this);
-                                                       x7.setMessage(  aList.get(aList.size() - 1).annual()).setPositiveButton("Go next", new DialogInterface.OnClickListener() {
+                                                       x7.setMessage(  aList.get(aList.size() - 1).annual()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
 
@@ -244,7 +244,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        p.monthly();
                                                        p.annual();
                                                        AlertDialog.Builder x8 = new AlertDialog.Builder(TestTaxGUI.this);
-                                                       x8.setMessage(  aList.get(aList.size() - 1).annual()).setPositiveButton("Go next", new DialogInterface.OnClickListener() {
+                                                       x8.setMessage(  aList.get(aList.size() - 1).annual()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
 
