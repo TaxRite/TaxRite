@@ -62,10 +62,10 @@
             android:inputType="numberDecimal" />
 
         <EditText
-            android:layout_margin="20dp"
             android:id="@+id/TFunion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/U_S"
@@ -100,7 +100,7 @@
             <RadioButton
                 android:id="@+id/rbweekly"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
@@ -132,7 +132,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
-                android:text="@string/cal"/>
+                android:text="@string/cal" />
         </RadioGroup>
+
+        <Button
+            android:id="@+id/btnEntitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:text=" My Entitlements" />
     </LinearLayout>
 </ScrollView>
