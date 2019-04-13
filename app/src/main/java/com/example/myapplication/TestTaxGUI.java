@@ -28,13 +28,15 @@ public class TestTaxGUI extends AppCompatActivity {
     public ArrayList<Tax> aList = new ArrayList();
     ListView show;
     Double hour, rate, overtime, taxcredit, healthinsurance, unionsubs;
-public static double netTest=0.0;
+    public static double netTest=0.0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_tax_gui);
 
         Button butCalc = (Button) findViewById(R.id.btncalculate);
+        Button butEntitle = (Button) findViewById(R.id.btnEntitle);
+
 
 
 
@@ -83,16 +85,7 @@ public static double netTest=0.0;
                                                p.setOverTime(overtime);
                                                aList.add(p);
 
-                                               AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(TestTaxGUI.this);
-                                               alertDialogBuilder.setMessage( "\n" + getString(R.string.tH) + hour + "\n" + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
-                                                       + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime);
-                                               alertDialogBuilder.setTitle(getString(R.string.ti) );
-                                               AlertDialog alt =alertDialogBuilder.create();
-                                               alt.show();
-                                               //Toast.makeText(getApplicationContext(), getString(R.string.ti) + "\n" + getString(R.string.tH) + hour + "\n"
-                                                              // + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
-                                                              // + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime,
-                                               // Toast.LENGTH_LONG).show();
+
 
                                                if (radWeek.isChecked()) {
 
@@ -105,8 +98,7 @@ public static double netTest=0.0;
                                                        AlertDialog alt1 =x.create();
                                                        alt1.show();
 
-                                                     //  Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
-                                                             //  Toast.LENGTH_LONG).show();
+
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("fr")) {
                                                        p.weekly();
@@ -115,8 +107,7 @@ public static double netTest=0.0;
                                                        x1.setTitle(R.string.tWeekly);
                                                        AlertDialog alt2 =x1.create();
                                                        alt2.show();
-                                                     //  Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
-                                                              // Toast.LENGTH_LONG).show();
+
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("es")) {
                                                        p.weekly();
@@ -125,8 +116,7 @@ public static double netTest=0.0;
                                                        x2.setTitle(R.string.tWeekly);
                                                        AlertDialog alt3 =x2.create();
                                                        alt3.show();
-                                                      // Toast.makeText(getApplicationContext(), getString(R.string.tWeekly) + aList.get(aList.size() - 1).weekly(),
-                                                              // Toast.LENGTH_LONG).show();
+
                                                    }
                                                } else if (radMonth.isChecked()) {
                                                    if (Locale.getDefault().getLanguage().equals("en")) {
@@ -137,8 +127,7 @@ public static double netTest=0.0;
                                                        x3.setTitle(R.string.tMonthly);
                                                        AlertDialog alt4 =x3.create();
                                                        alt4.show();
-                                                      // Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
-                                                             //  Toast.LENGTH_LONG).show();
+
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("fr")) {
                                                        p.weekly();
@@ -148,8 +137,7 @@ public static double netTest=0.0;
                                                        x4.setTitle(R.string.tMonthly);
                                                        AlertDialog alt5 =x4.create();
                                                        alt5.show();
-                                                      // Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
-                                                             //  Toast.LENGTH_LONG).show();
+
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("es")) {
                                                        p.weekly();
@@ -159,8 +147,7 @@ public static double netTest=0.0;
                                                        x5.setTitle(R.string.tMonthly);
                                                        AlertDialog alt6 =x5.create();
                                                        alt6.show();
-                                                      // Toast.makeText(getApplicationContext(), getString(R.string.tMonthly) + aList.get(aList.size() - 1).monthly(),
-                                                             //  Toast.LENGTH_LONG).show();
+
                                                    }
                                                } else if (radAnnu.isChecked()) {
                                                    if (Locale.getDefault().getLanguage().equals("en")) {
@@ -172,8 +159,7 @@ public static double netTest=0.0;
                                                        x6.setTitle(R.string.tYearly);
                                                        AlertDialog alt7 =x6.create();
                                                        alt7.show();
-                                                      // Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
-                                                             //  Toast.LENGTH_LONG).show();
+
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("fr")) {
                                                        p.weekly();
@@ -184,8 +170,7 @@ public static double netTest=0.0;
                                                        x7.setTitle(R.string.tYearly);
                                                        AlertDialog alt8 =x7.create();
                                                        alt8.show();
-                                                       //Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
-                                                           //    Toast.LENGTH_LONG).show();
+
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("es")) {
                                                        p.weekly();
@@ -196,18 +181,24 @@ public static double netTest=0.0;
                                                        x8.setTitle(R.string.tYearly);
                                                        AlertDialog alt9 =x8.create();
                                                        alt9.show();
-                                                      // Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
-                                                              // Toast.LENGTH_LONG).show();
+                                                       // Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
+                                                       // Toast.LENGTH_LONG).show();
                                                    } else {
                                                        Toast.makeText(getApplicationContext(), getString(R.string.tOptions),
                                                                Toast.LENGTH_LONG).show();
                                                    }
 
                                                }
+                                               AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(TestTaxGUI.this);
+                                               alertDialogBuilder.setMessage( "\n" + getString(R.string.tH) + hour + "\n" + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
+                                                       + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime);
+                                               alertDialogBuilder.setTitle(getString(R.string.ti) );
+                                               AlertDialog alt =alertDialogBuilder.create();
+                                               alt.show();
                                                netTest = p.netpay();
 
 
-                                               startActivity(new Intent(getApplicationContext(), EntitlementsGUI.class));
+
 
 
                                            }
@@ -226,15 +217,36 @@ public static double netTest=0.0;
 
 
 
+        );
 
 
+
+
+        butEntitle.setOnClickListener(new View.OnClickListener(){
+
+                                        @Override
+
+                                        public void onClick(View view){
+
+                                            openEntitlmentsGUI();
+
+                                        }
+
+
+
+                                    }
 
         );
 
+
     }
 
+    public void openEntitlmentsGUI(){
 
+        Intent intent= new Intent(this,EntitlementsGUI.class);
+
+        startActivity(intent);
+
+    }
 
 }
-
-
