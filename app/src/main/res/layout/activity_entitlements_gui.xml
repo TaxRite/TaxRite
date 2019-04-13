@@ -11,6 +11,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:orientation="vertical">
+		
 
 		<ImageView
 			android:id="@+id/imageView7"
@@ -40,6 +41,7 @@
 				android:layout_margin="10dp"
 				android:hint="Married"
 				android:background="@android:color/holo_orange_light" />
+		</RadioGroup>
 		
 		<RadioGroup
 			android:layout_width="match_parent"
@@ -64,28 +66,31 @@
 				android:layout_margin="10dp"
 				android:hint="Job Seeker"
 				android:background="@android:color/holo_orange_light" />
+			</RadioGroup>
 
-			<EditText
-				android:id="@+id/txtage"
-				android:layout_width="369dp"
-				android:layout_height="wrap_content"
-				android:layout_margin="10dp"
-				android:background="@android:color/holo_orange_light"
-				android:hint="@string/age"
-				android:inputType="number" />
+		<EditText
+			android:id="@+id/txtage"
+			android:layout_width="326dp"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:background="@android:color/holo_orange_light"
+			android:layout_gravity="center_horizontal"
+			android:hint="@string/age"
+			android:inputType="number" />
 
 			<EditText
 				android:id="@+id/txtdependencies"
-				android:layout_width="369dp"
+				android:layout_width="326dp"
 				android:layout_height="wrap_content"
 				android:layout_margin="10dp"
 				android:background="@android:color/holo_orange_light"
+				android:layout_gravity="center_horizontal"
 				android:hint="@string/Depend"
 				android:inputType="number" />
 
 			<CheckBox
 				android:id="@+id/ckbresidence"
-				android:layout_width="369dp"
+				android:layout_width="326dp"
 				android:layout_height="wrap_content"
 				android:layout_gravity="center_horizontal"
 				android:layout_margin="10dp"
@@ -99,14 +104,14 @@
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:layout_margin="10dp"
+			android:layout_gravity="center_horizontal"
 			android:hint="@string/checkE" />
 		<Button
 			android:id="@+id/next"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:layout_margin="10dp"
+			android:layout_gravity="center_horizontal"
 			android:hint="Check Taxrebate"/>
-		</RadioGroup>
-		</RadioGroup>
 	</LinearLayout>
 </ScrollView>
