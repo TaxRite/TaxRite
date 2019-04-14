@@ -117,7 +117,19 @@ public class EntitlementsGUI  extends AppCompatActivity {
 													e.setAge(age);
 													e.setDependencies(dependencies);
 													aList2.add(e);
-//
+                                                    AlertDialog.Builder rebate = new AlertDialog.Builder(EntitlementsGUI.this);
+														rebate.setMessage( " You might be entitled to tax rebate ");
+
+													rebate.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
+													{
+														@Override
+														public void onClick(DialogInterface dialog, int which)
+														{
+															startActivity(new Intent(getApplicationContext(),RebateGUI.class));
+														}
+													});
+													AlertDialog rebate1 =rebate.create();
+													rebate1.show();
 
 
 
@@ -125,60 +137,56 @@ public class EntitlementsGUI  extends AppCompatActivity {
 													///medical card
 													if (single.isChecked() && age <= (66) && (dependencies< 1 && net() <= 184 || maried.isChecked() && age >= (66) && (dependencies < 1 && net() <= (201.50)))) {
 														AlertDialog.Builder a = new AlertDialog.Builder(EntitlementsGUI.this);
-														a.setMessage( getString(R.string.gNews));
-														a.setTitle(getString(R.string.mCard));
-														a.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
-														{
+														a.setMessage( getString(R.string.gNews)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
+
 															@Override
-															public void onClick(DialogInterface dialog, int which)
-															{
-																startActivity(new Intent(getApplicationContext(),RebateGUI.class));
+															public void onClick(DialogInterface dialog, int which) {
 															}
-														});
+														})
+																.setNegativeButton((getString(R.string.eCan)), null);
+														a.setTitle(getString(R.string.mCard));
+
 														AlertDialog alt1 =a.create();
 														alt1.show();
 													} else if ((maried.isChecked() || !single.isChecked() && age <(66) && (dependencies < 1 && net() <= 164 || single.isChecked()&& !maried.isChecked ()&& age > (66) && (dependencies < 1 && net() <= (173.50))))){
 														AlertDialog.Builder a1 = new AlertDialog.Builder(EntitlementsGUI.this);
-														a1.setMessage(  getString(R.string.gNews));
+														a1.setMessage(  getString(R.string.gNews)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
+
+															@Override
+															public void onClick(DialogInterface dialog, int which) {
+															}
+														})
+																.setNegativeButton((getString(R.string.eCan)), null);
 														a1.setTitle(getString(R.string.mCard));
 
-														a1.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
-														{
-															@Override
-															public void onClick(DialogInterface dialog, int which)
-															{
-																startActivity(new Intent(getApplicationContext(),RebateGUI.class));
-															}
-														});
+
 														AlertDialog alt2 =a1.create();
 														alt2.show();
 													} else if ((single.isChecked()|| maried.isChecked() && age <(66) && (dependencies >0 && net() <= 266.50 && dependencies < 2 || single.isChecked()|| maried.isChecked() && age > (66) && (dependencies >0&& (dependencies <2 && net() <= (298)))))){
 														AlertDialog.Builder a3 = new AlertDialog.Builder(EntitlementsGUI.this);
-														a3.setMessage(  getString(R.string.gNews));
-														a3.setTitle(getString(R.string.mCard));
-														a3.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
-														{
+														a3.setMessage(  getString(R.string.gNews)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
+
 															@Override
-															public void onClick(DialogInterface dialog, int which)
-															{
-																startActivity(new Intent(getApplicationContext(),RebateGUI.class));
+															public void onClick(DialogInterface dialog, int which) {
 															}
-														});
+														})
+																.setNegativeButton((getString(R.string.eCan)), null);
+														a3.setTitle(getString(R.string.mCard));
+
 														AlertDialog alt3 =a3.create();
 														alt3.show();
 													}
 													else
 														for (int i=0; i < 2; i++) {
 															AlertDialog.Builder a4 = new AlertDialog.Builder(EntitlementsGUI.this);
-															a4.setMessage(getString(R.string.entD5));
-															a4.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
-															{
+															a4.setMessage(getString(R.string.entD5)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
+
 																@Override
-																public void onClick(DialogInterface dialog, int which)
-																{
-																	startActivity(new Intent(getApplicationContext(),RebateGUI.class));
+																public void onClick(DialogInterface dialog, int which) {
 																}
-															});
+															})
+																	.setNegativeButton((getString(R.string.eCan)), null);
+
 															a4.setTitle(getString(R.string.mCard));
 															AlertDialog alt4 =a4.create();
 															alt4.show();
@@ -200,7 +208,13 @@ public class EntitlementsGUI  extends AppCompatActivity {
 													///family supplement
 													if ( net() < 521.00 && ((dependencies>0 && ((dependencies<2)&& working.isChecked()&& maried.isChecked())))) {
 														AlertDialog.Builder a5= new AlertDialog.Builder(EntitlementsGUI.this);
-														a5.setMessage(getString(R.string.entD6));
+														a5.setMessage(getString(R.string.entD6)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
+
+															@Override
+															public void onClick(DialogInterface dialog, int which) {
+															}
+														})
+																.setNegativeButton((getString(R.string.eCan)), null);
 														a5.setTitle(getString(R.string.famSup));
 														AlertDialog alt5 =a5.create();
 														alt5.show();
