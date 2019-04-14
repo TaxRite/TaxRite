@@ -38,9 +38,6 @@ public class TestTaxGUI extends AppCompatActivity {
         Button butCalc = (Button) findViewById(R.id.btncalculate);
         Button butEntitle = (Button) findViewById(R.id.btnEntitle);
 
-
-
-
         final RadioButton radWeek = (RadioButton) findViewById(R.id.rbweekly);
         final RadioButton radMonth = (RadioButton) findViewById(R.id.rbmonthly);
         final RadioButton radAnnu = (RadioButton) findViewById(R.id.rbannu);
@@ -51,17 +48,8 @@ public class TestTaxGUI extends AppCompatActivity {
         final EditText taxcredit1 = (EditText) findViewById(R.id.TFtaxcredit);
         final EditText overtime1 = (EditText) findViewById(R.id.TFovertime);
 
-
         butCalc.setOnClickListener(new View.OnClickListener() {
-
-
-
-
-
-
-
                                        Tax p = new Tax();
-
                                        //TextView result;
                                        @Override
                                        public void onClick(View view) {
@@ -70,9 +58,6 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        Toast.LENGTH_LONG).show();
                                            }
                                            else {
-
-
-
                                                Double hour = Double.parseDouble(hours1.getText().toString());
                                                Double rate = Double.parseDouble(rate1.getText().toString());
                                                Double health = Double.parseDouble(health1.getText().toString());
@@ -85,12 +70,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                p.setTaxCredit(taxcredit);
                                                p.setOverTime(overtime);
                                                aList.add(p);
-
-
-
                                                if (radWeek.isChecked()) {
-
-
                                                    if (Locale.getDefault().getLanguage().equals("en")) {
                                                        p.weekly();
                                                        AlertDialog.Builder x = new AlertDialog.Builder(TestTaxGUI.this);
@@ -98,8 +78,6 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x.setTitle(R.string.tWeekly);
                                                        AlertDialog alt1 =x.create();
                                                        alt1.show();
-
-
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("fr")) {
                                                        p.weekly();
@@ -108,7 +86,6 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x1.setTitle(R.string.tWeekly);
                                                        AlertDialog alt2 =x1.create();
                                                        alt2.show();
-
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("es")) {
                                                        p.weekly();
@@ -116,19 +93,14 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x2.setMessage(  aList.get(aList.size() - 1).weekly()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
-
                                                            public void onClick(DialogInterface dialog, int which) {
-
                                                            }
-
                                                        })
-
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x2.setTitle(getString(R.string.ti) );
                                                        x2.setTitle(R.string.tWeekly);
                                                        AlertDialog alt3 =x2.create();
                                                        alt3.show();
-
                                                    }
                                                } else if (radMonth.isChecked()) {
                                                    if (Locale.getDefault().getLanguage().equals("en")) {
@@ -138,19 +110,14 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x3.setMessage(  aList.get(aList.size() - 1).monthly()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
-
                                                            public void onClick(DialogInterface dialog, int which) {
-
                                                            }
-
                                                        })
-
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x3.setTitle(getString(R.string.ti) );
                                                        x3.setTitle(R.string.tMonthly);
                                                        AlertDialog alt4 =x3.create();
                                                        alt4.show();
-
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("fr")) {
                                                        p.weekly();
@@ -159,19 +126,14 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x4.setMessage(  aList.get(aList.size() - 1).monthly()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
-
                                                            public void onClick(DialogInterface dialog, int which) {
-
                                                            }
-
                                                        })
-
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x4.setTitle(getString(R.string.ti) );;
                                                        x4.setTitle(R.string.tMonthly);
                                                        AlertDialog alt5 =x4.create();
                                                        alt5.show();
-
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("es")) {
                                                        p.weekly();
@@ -180,19 +142,14 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x5.setMessage(  aList.get(aList.size() - 1).monthly()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
-
                                                            public void onClick(DialogInterface dialog, int which) {
-
                                                            }
-
                                                        })
-
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x5.setTitle(getString(R.string.ti) );
                                                        x5.setTitle(R.string.tMonthly);
                                                        AlertDialog alt6 =x5.create();
                                                        alt6.show();
-
                                                    }
                                                } else if (radAnnu.isChecked()) {
                                                    if (Locale.getDefault().getLanguage().equals("en")) {
@@ -203,19 +160,14 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x6.setMessage(  aList.get(aList.size() - 1).annual()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
-
                                                            public void onClick(DialogInterface dialog, int which) {
-
                                                            }
-
                                                        })
-
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x6.setTitle(getString(R.string.ti) );;
                                                        x6.setTitle(R.string.tYearly);
                                                        AlertDialog alt7 =x6.create();
                                                        alt7.show();
-
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("fr")) {
                                                        p.weekly();
@@ -225,19 +177,14 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x7.setMessage(  aList.get(aList.size() - 1).annual()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
-
                                                            public void onClick(DialogInterface dialog, int which) {
-
                                                            }
-
                                                        })
-
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x7.setTitle(getString(R.string.ti) );;
                                                        x7.setTitle(R.string.tYearly);
                                                        AlertDialog alt8 =x7.create();
                                                        alt8.show();
-
                                                    }
                                                    if (Locale.getDefault().getLanguage().equals("es")) {
                                                        p.weekly();
@@ -247,13 +194,9 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        x8.setMessage(  aList.get(aList.size() - 1).annual()).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                            @Override
-
                                                            public void onClick(DialogInterface dialog, int which) {
-
                                                            }
-
                                                        })
-
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x8.setTitle(getString(R.string.ti) );;
                                                        x8.setTitle(R.string.tYearly);
@@ -265,76 +208,38 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        Toast.makeText(getApplicationContext(), getString(R.string.tOptions),
                                                                Toast.LENGTH_LONG).show();
                                                    }
-
                                                }
                                                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(TestTaxGUI.this);
                                                alertDialogBuilder.setMessage( "\n" + getString(R.string.tH) + hour + "\n" + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
                                                        + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                    @Override
-
                                                    public void onClick(DialogInterface dialog, int which) {
-
                                                    }
-
                                                })
-
                                                        .setNegativeButton((getString(R.string.eCan)), null);
                                                alertDialogBuilder.setTitle(getString(R.string.ti) );
                                                AlertDialog alt =alertDialogBuilder.create();
                                                alt.show();
                                                netTest = p.netpay();
-
-
-
-
-
                                            }
-
-
-
-
-
-
-
                                        }
                                    }
-
-
-
-
-
-
         );
-
-
-
-
         butEntitle.setOnClickListener(new View.OnClickListener(){
 
                                         @Override
 
-                                        public void onClick(View view){
-
-                                            openEntitlmentsGUI();
-
+                                        public void onClick(View view){ openEntitlmentsGUI();
                                         }
 
 
 
                                     }
-
         );
-
-
     }
-
     public void openEntitlmentsGUI(){
-
         Intent intent= new Intent(this,EntitlementsGUI.class);
-
         startActivity(intent);
-
     }
-
 }

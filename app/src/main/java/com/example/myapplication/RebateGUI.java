@@ -16,7 +16,6 @@ public class RebateGUI extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rebate_gui);
 
-        //open form activity
        final CheckBox c1 = (CheckBox)findViewById(R.id.chk1);
        final CheckBox c2 = (CheckBox)findViewById(R.id.chk2);
        final CheckBox c3 = (CheckBox)findViewById(R.id.chk3);
@@ -27,18 +26,17 @@ public class RebateGUI extends AppCompatActivity {
         {
             @Override
             public void onClick(View v)
-            {
+            { //method for checking if the check boxes are checked
                 if(c1.isChecked()||c2.isChecked()||c3.isChecked()||c4.isChecked()||c5.isChecked()){
                         Toast.makeText(getApplicationContext(), getString(R.string.rMsg1),
                                 Toast.LENGTH_LONG).show();
                 }
-                else{
-                    for (int i=0; i < 2; i++) {
+                else{ //method if none of the boxes is checked
+                    for (int i=0; i < 2; i++) { //doubles the time of toast
                         Toast.makeText(getApplicationContext(), getString(R.string.rMsg2),
                                 Toast.LENGTH_LONG).show();
                     }
-                }
-
+                }//opens next activity
                 startActivity(new Intent(getApplicationContext(),FormGUI.class));
             }
         });

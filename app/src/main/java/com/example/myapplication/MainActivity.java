@@ -34,8 +34,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 startActivity(new Intent(getApplicationContext(),TestTaxGUI.class));
-           /* if you want to finish the first activity then just call
-            finish(); */
             }
         });
 

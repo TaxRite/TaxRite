@@ -12,7 +12,7 @@ public class EndGUI extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_end_gui);
-
+        //method to close the application
         Button btnF = (Button)findViewById(R.id.btnfinished);
         btnF.setOnClickListener(
                 new View.OnClickListener() {
