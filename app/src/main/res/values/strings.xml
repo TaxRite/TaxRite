@@ -168,7 +168,7 @@
     <string name="eLiving">Living in Ireland over 3 years</string>
     <string name="checkE">Check Entitlements</string>
     <string name="iAm">I am:</string>
-    <string name="tickBox">Please tick the options which are relevent to you, enter your age and number of dependants.</string>
+    <string name="tickBox">Please tick the options which are relevant to you, enter your age and number of dependants.</string>
 
     <!-- Change Language Button -->
     <string name="changeLang">Change Language</string>
