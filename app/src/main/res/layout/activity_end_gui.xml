@@ -7,7 +7,7 @@
     android:background="@android:color/background_dark"
     tools:context=".EndGUI">
 
-    <LinearLayou
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/background_dark"
@@ -35,5 +35,5 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/exit"/>
-    </LinearLayou>
+    </LinearLayout>
 </ScrollView>
