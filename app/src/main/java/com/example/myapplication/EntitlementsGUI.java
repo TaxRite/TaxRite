@@ -118,7 +118,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 													e.setAge(age);
 													e.setDependencies(dependencies);
 													aList2.add(e);
-
+//
 													builder.setMessage(getString(R.string.tNet)+net());
 													builder.setPositiveButton("OK", new DialogInterface.OnClickListener()
 													{
