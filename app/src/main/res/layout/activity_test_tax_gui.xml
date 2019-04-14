@@ -135,11 +135,5 @@
                 android:text="@string/cal" />
         </RadioGroup>
 
-        <Button
-            android:id="@+id/btnEntitle"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:text="@string/tEnt" />
     </LinearLayout>
 </ScrollView>
