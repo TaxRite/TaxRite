@@ -20,8 +20,11 @@ import android.widget.TextView;
 import java.util.Arrays;
 import java.util.List;
 
-public class FormGUI extends AppCompatActivity {
+import static com.example.myapplication.TestTaxGUI.netTest;
 
+public class FormGUI extends AppCompatActivity {
+    //public static double netTest;
+    final String infoPay = String.valueOf(netTest);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +44,7 @@ public class FormGUI extends AppCompatActivity {
         final String sendemail1 = "NewTaxRiteRequest@gmail.com";
         final String recemail = "TaxRiteIreland@gmail.com";
         final boolean conn2int;
+
         //method for checking active internet connection
         //final boolean conn2int = false;
         ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -86,7 +90,7 @@ public class FormGUI extends AppCompatActivity {
                                         "Customer's email address: "+((EditText) findViewById(R.id.txtemail)).getText().toString()+"\n"+
                                         "Customer's address: "+((EditText) findViewById(R.id.txtaddress1)).getText().toString()+"\n"+((EditText) findViewById(R.id.txtaddress2)).getText().toString()+"\n"+
                                         ((EditText) findViewById(R.id.txtaddress3)).getText().toString()+"\n"+
-                                        "Customer's message: "+((TextView) findViewById(R.id.txtmessage)).getText().toString();
+                                        "Customer's message: "+((TextView) findViewById(R.id.txtmessage)).getText().toString()+"Payment details: "+infoPay;
                                 new SendMailTask(FormGUI.this).execute(fromEmail, fromPassword, toEmailList, emailSubject, emailBody, emailPhone, emailEmail, emailAddress1, emailAddress2, emailAddress3); //sends the email with entered details
                                 startActivity(new Intent(getApplicationContext(),EndGUI.class)); //opens next activity
                             }
