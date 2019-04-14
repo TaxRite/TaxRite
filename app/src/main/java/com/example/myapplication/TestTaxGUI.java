@@ -80,7 +80,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        AlertDialog.Builder x = new AlertDialog.Builder(TestTaxGUI.this);
                                                        x.setMessage(  aList.get(aList.size() - 1).weekly());
                                                        x.setTitle(R.string.tWeekly);
-                                                       x.setPositiveButton("OK", new DialogInterface.OnClickListener()
+                                                       x.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
                                                        {
                                                            @Override
                                                            public void onClick(DialogInterface dialog, int which)
@@ -96,7 +96,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        AlertDialog.Builder x1 = new AlertDialog.Builder(TestTaxGUI.this);
                                                        x1.setMessage(  aList.get(aList.size() - 1).weekly());
                                                        x1.setTitle(R.string.tWeekly);
-                                                       x1.setPositiveButton("OK", new DialogInterface.OnClickListener()
+                                                       x1.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
                                                        {
                                                            @Override
                                                            public void onClick(DialogInterface dialog, int which)
@@ -118,7 +118,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x2.setTitle(R.string.tWeekly);
-                                                       x2.setPositiveButton("OK", new DialogInterface.OnClickListener()
+                                                       x2.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
                                                        {
                                                            @Override
                                                            public void onClick(DialogInterface dialog, int which)
@@ -142,7 +142,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x3.setTitle(R.string.tMonthly);
-                                                       x3.setPositiveButton("OK", new DialogInterface.OnClickListener()
+                                                       x3.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
                                                        {
                                                            @Override
                                                            public void onClick(DialogInterface dialog, int which)
@@ -165,7 +165,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x4.setTitle(R.string.tMonthly);
-                                                       x4.setPositiveButton("OK", new DialogInterface.OnClickListener()
+                                                       x4.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
                                                        {
                                                            @Override
                                                            public void onClick(DialogInterface dialog, int which)
@@ -188,7 +188,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x5.setTitle(R.string.tMonthly);
-                                                       x5.setPositiveButton("OK", new DialogInterface.OnClickListener()
+                                                       x5.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
                                                        {
                                                            @Override
                                                            public void onClick(DialogInterface dialog, int which)
@@ -213,7 +213,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x6.setTitle(R.string.tYearly);
-                                                       x6.setPositiveButton("OK", new DialogInterface.OnClickListener()
+                                                       x6.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
                                                        {
                                                            @Override
                                                            public void onClick(DialogInterface dialog, int which)
@@ -237,7 +237,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x7.setTitle(R.string.tYearly);
-                                                       x7.setPositiveButton("OK", new DialogInterface.OnClickListener()
+                                                       x7.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
                                                        {
                                                            @Override
                                                            public void onClick(DialogInterface dialog, int which)
@@ -261,7 +261,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
                                                        x8.setTitle(R.string.tYearly);
-                                                       x8.setPositiveButton("OK", new DialogInterface.OnClickListener()
+                                                       x8.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
                                                        {
                                                            @Override
                                                            public void onClick(DialogInterface dialog, int which)

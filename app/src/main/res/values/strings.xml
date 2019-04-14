@@ -160,13 +160,15 @@
     <!-- Entitlement GUI -->
     <string name="entitelement">Entitlements</string>
     <string name="single">Single</string>
-    <string name="maried">Maried</string>
+    <string name="maried">Married</string>
     <string name="working">Working</string>
     <string name="job_seeker">Job Seeker</string>
     <string name="Depend">Dependencies</string>
     <string name="age">Age</string>
-    <string name="eLiving">Are you living in ireland over 3 years</string>
+    <string name="eLiving">Living in Ireland over 3 years</string>
     <string name="checkE">Check Entitlements</string>
+    <string name="iAm">I am:</string>
+    <string name="tickBox">Please tick the options which are relevent to you, enter your age and number of dependants.</string>
 
     <!-- Change Language Button -->
     <string name="changeLang">Change Language</string>
@@ -205,7 +207,7 @@
     <string name="cBen">Child Benefit</string>
     <string name="SUSI">SUSI</string>
     <string name="rSup">Rent supplement</string>
-
+    <string name="ok">OK</string>
 
 
 </resources>

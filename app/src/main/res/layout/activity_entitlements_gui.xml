@@ -24,7 +24,7 @@
 			android:id="@+id/textView2"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="Please thick the options which are relevent to you, enter your age and number of dependants."
+			android:text="@string/tickBox"
 			android:textColor="@android:color/holo_orange_light"
 			android:textSize="24sp" />
 
@@ -39,7 +39,7 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
-				android:text="I am:"
+				android:text="@string/iAm"
 				android:layout_gravity="center_horizontal"
 				android:textColor="@android:color/holo_orange_light"
 				android:textSize="18sp" />
@@ -51,7 +51,7 @@
 				android:layout_gravity="center_horizontal"
 				android:layout_margin="10dp"
 				android:background="@android:color/holo_orange_light"
-				android:hint="Single" />
+				android:hint="@string/single" />
 
 			<RadioButton
 				android:id="@+id/rbmaried"
@@ -60,7 +60,7 @@
 				android:layout_gravity="center_horizontal"
 				android:layout_margin="0dp"
 				android:background="@android:color/holo_orange_light"
-				android:hint="Married" />
+				android:hint="@string/maried" />
 		</RadioGroup>
 		
 		<RadioGroup
@@ -74,7 +74,7 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
-				android:text="I am:"
+				android:text="@string/iAm"
 				android:layout_gravity="center_horizontal"
 				android:textColor="@android:color/holo_orange_light"
 				android:textSize="18sp" />
@@ -86,7 +86,7 @@
 				android:layout_gravity="center_horizontal"
 				android:layout_margin="10dp"
 				android:background="@android:color/holo_orange_light"
-				android:hint="Working" />
+				android:hint="@string/working" />
 
 			<RadioButton
 				android:id="@+id/rbjseeker"
@@ -94,7 +94,7 @@
 				android:layout_height="wrap_content"
 				android:layout_gravity="center_horizontal"
 				android:layout_margin="0dp"
-				android:hint="Job Seeker"
+				android:hint="@string/job_seeker"
 				android:background="@android:color/holo_orange_light" />
 			</RadioGroup>
 
@@ -124,7 +124,7 @@
 				android:layout_height="wrap_content"
 				android:layout_gravity="center_horizontal"
 				android:layout_margin="10dp"
-				android:hint="Living in Ireland over 3 years"
+				android:hint="@string/eLiving"
 				android:background="@android:color/holo_orange_light" />
 			
 			

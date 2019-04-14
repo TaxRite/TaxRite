@@ -127,7 +127,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 														AlertDialog.Builder a = new AlertDialog.Builder(EntitlementsGUI.this);
 														a.setMessage( getString(R.string.gNews));
 														a.setTitle(getString(R.string.mCard));
-														a.setPositiveButton("OK", new DialogInterface.OnClickListener()
+														a.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
 														{
 															@Override
 															public void onClick(DialogInterface dialog, int which)
@@ -142,7 +142,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 														a1.setMessage(  getString(R.string.gNews));
 														a1.setTitle(getString(R.string.mCard));
 
-														a1.setPositiveButton("OK", new DialogInterface.OnClickListener()
+														a1.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
 														{
 															@Override
 															public void onClick(DialogInterface dialog, int which)
@@ -156,7 +156,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 														AlertDialog.Builder a3 = new AlertDialog.Builder(EntitlementsGUI.this);
 														a3.setMessage(  getString(R.string.gNews));
 														a3.setTitle(getString(R.string.mCard));
-														a3.setPositiveButton("OK", new DialogInterface.OnClickListener()
+														a3.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
 														{
 															@Override
 															public void onClick(DialogInterface dialog, int which)
@@ -171,7 +171,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 														for (int i=0; i < 2; i++) {
 															AlertDialog.Builder a4 = new AlertDialog.Builder(EntitlementsGUI.this);
 															a4.setMessage(getString(R.string.entD5));
-															a4.setPositiveButton("OK", new DialogInterface.OnClickListener()
+															a4.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener()
 															{
 																@Override
 																public void onClick(DialogInterface dialog, int which)
@@ -207,7 +207,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 													}
 													else if( net() >521.00 && net() <= 622.00 && ((dependencies>1)&& ((dependencies<3 ) ) &&working.isChecked()&& single.isChecked()||maried.isChecked())){
 														AlertDialog.Builder a6= new AlertDialog.Builder(EntitlementsGUI.this);
-														a6.setMessage(getString(R.string.entD7)).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
+														a6.setMessage(getString(R.string.entD7)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
 
 															@Override
 															public void onClick(DialogInterface dialog, int which) {
@@ -220,7 +220,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 													}
 													else if(net() >622.00 && net() <= 723.00 && dependencies>2 && dependencies<4 && working.isChecked()&& single.isChecked() || maried.isChecked()){
 														AlertDialog.Builder a7= new AlertDialog.Builder(EntitlementsGUI.this);
-														a7.setMessage(getString(R.string.entD8)).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
+														a7.setMessage(getString(R.string.entD8)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
 
 															@Override
 															public void onClick(DialogInterface dialog, int which) {
@@ -233,7 +233,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 													}
 													else if (net() >521.00 && dependencies <1 && working.isChecked()&& single.isChecked()) {
 														AlertDialog.Builder a8= new AlertDialog.Builder(EntitlementsGUI.this);
-														a8.setMessage( getString(R.string.eSoz)).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
+														a8.setMessage( getString(R.string.eSoz)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
 
 															@Override
 															public void onClick(DialogInterface dialog, int which) {
@@ -247,7 +247,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 													///child benefit
 													if (dependencies== 1){
 														AlertDialog.Builder a9= new AlertDialog.Builder(EntitlementsGUI.this);
-														a9.setMessage(getString(R.string.entD11)).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
+														a9.setMessage(getString(R.string.entD11)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
 
 															@Override
 															public void onClick(DialogInterface dialog, int which) {
@@ -259,7 +259,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 														alt9.show();
 													}else if( dependencies == 2 ) {
 														AlertDialog.Builder a10= new AlertDialog.Builder(EntitlementsGUI.this);
-														a10.setMessage(getString(R.string.entD12)).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
+														a10.setMessage(getString(R.string.entD12)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
 
 															@Override
 															public void onClick(DialogInterface dialog, int which) {
@@ -271,7 +271,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 														alt10.show();
 													}else if( dependencies == 3){
 														AlertDialog.Builder a11= new AlertDialog.Builder(EntitlementsGUI.this);
-														a11.setMessage(getString(R.string.entD13)).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
+														a11.setMessage(getString(R.string.entD13)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
 
 															@Override
 															public void onClick(DialogInterface dialog, int which) {
@@ -283,7 +283,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 														alt11.show();
 													}else if( dependencies == 4){
 														AlertDialog.Builder a12= new AlertDialog.Builder(EntitlementsGUI.this);
-														a12.setMessage(getString(R.string.entD17)).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
+														a12.setMessage(getString(R.string.entD17)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
 
 															@Override
 															public void onClick(DialogInterface dialog, int which) {
@@ -297,7 +297,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 													///susi
 													if(working.isChecked()&& residency.isChecked() ){
 														AlertDialog.Builder a13= new AlertDialog.Builder(EntitlementsGUI.this);
-														a13.setMessage(getString(R.string.entD18)).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
+														a13.setMessage(getString(R.string.entD18)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
 
 															@Override
 															public void onClick(DialogInterface dialog, int which) {
@@ -310,7 +310,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 													}
 													else if (!residency.isChecked()&& working.isChecked()){
 														AlertDialog.Builder a14= new AlertDialog.Builder(EntitlementsGUI.this);
-														a14.setMessage(getString(R.string.entD19)).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
+														a14.setMessage(getString(R.string.entD19)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
 
 															@Override
 															public void onClick(DialogInterface dialog, int which) {
@@ -324,7 +324,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 													///rent supplement
 													if (!working.isChecked()&& jobseeker.isChecked()){
 														AlertDialog.Builder a15= new AlertDialog.Builder(EntitlementsGUI.this);
-														a15.setMessage(getString(R.string.entD20)).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
+														a15.setMessage(getString(R.string.entD20)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
 
 															@Override
 															public void onClick(DialogInterface dialog, int which) {
@@ -337,7 +337,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 													}
 													else if (!residency.isChecked()&& working.isChecked()) {
 														AlertDialog.Builder a16 = new AlertDialog.Builder(EntitlementsGUI.this);
-														a16.setMessage(getString(R.string.entD21)).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
+														a16.setMessage(getString(R.string.entD21)).setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
 
 															@Override
 															public void onClick(DialogInterface dialog, int which) {

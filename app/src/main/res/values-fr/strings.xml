@@ -77,14 +77,16 @@
 
     <!-- Entitlement GUI -->
     <string name="entitelement">Derechos</string>
-    <string name="single">célibataire</string>
+    <string name="single">Unique</string>
     <string name="maried">Marié</string>
     <string name="working">Travail</string>
     <string name="job_seeker">Chercheur d\'emploi</string>
     <string name="Depend">Les dépendances</string>
     <string name="age">Âge</string>
     <string name="checkE">Vérifier les droits</string>
-    <string name="eLiving">Vivez-vous en Irlande plus de 3 ans</string>
+    <string name="eLiving">Vivre en Irlande plus de 3 ans</string>
+    <string name="iAm">Je suis:</string>
+    <string name="tickBox">Veuillez cocher les options qui vous concernent, entrez votre âge et le nombre de personnes à votre charge.</string>
 
     <!-- Change Language Button -->
     <string name="changeLang">Changer de langue</string>
@@ -124,6 +126,7 @@
     <string name="cBen">Allocation familiale</string>
     <string name="SUSI">SUSI</string>
     <string name="rSup">Supplément de loyer</string>
+    <string name="ok">D\'accord</string>
 
 
 </resources>
