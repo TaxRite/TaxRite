@@ -111,7 +111,6 @@ public class TestTaxGUI extends AppCompatActivity {
                                                            }
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
-                                                       x2.setTitle(getString(R.string.ti) );
                                                        x2.setTitle(R.string.tWeekly);
                                                        x2.setPositiveButton("OK", new DialogInterface.OnClickListener()
                                                        {
@@ -136,7 +135,6 @@ public class TestTaxGUI extends AppCompatActivity {
                                                            }
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
-                                                       x3.setTitle(getString(R.string.ti) );
                                                        x3.setTitle(R.string.tMonthly);
                                                        x3.setPositiveButton("OK", new DialogInterface.OnClickListener()
                                                        {
@@ -160,7 +158,6 @@ public class TestTaxGUI extends AppCompatActivity {
                                                            }
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
-                                                       x4.setTitle(getString(R.string.ti) );;
                                                        x4.setTitle(R.string.tMonthly);
                                                        x4.setPositiveButton("OK", new DialogInterface.OnClickListener()
                                                        {
@@ -184,7 +181,6 @@ public class TestTaxGUI extends AppCompatActivity {
                                                            }
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
-                                                       x5.setTitle(getString(R.string.ti) );
                                                        x5.setTitle(R.string.tMonthly);
                                                        x5.setPositiveButton("OK", new DialogInterface.OnClickListener()
                                                        {
@@ -210,7 +206,6 @@ public class TestTaxGUI extends AppCompatActivity {
                                                            }
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
-                                                       x6.setTitle(getString(R.string.ti) );;
                                                        x6.setTitle(R.string.tYearly);
                                                        x6.setPositiveButton("OK", new DialogInterface.OnClickListener()
                                                        {
@@ -235,7 +230,6 @@ public class TestTaxGUI extends AppCompatActivity {
                                                            }
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
-                                                       x7.setTitle(getString(R.string.ti) );;
                                                        x7.setTitle(R.string.tYearly);
                                                        x7.setPositiveButton("OK", new DialogInterface.OnClickListener()
                                                        {
@@ -260,7 +254,6 @@ public class TestTaxGUI extends AppCompatActivity {
                                                            }
                                                        })
                                                                .setNegativeButton((getString(R.string.eCan)), null);
-                                                       x8.setTitle(getString(R.string.ti) );;
                                                        x8.setTitle(R.string.tYearly);
                                                        x8.setPositiveButton("OK", new DialogInterface.OnClickListener()
                                                        {
@@ -272,25 +265,11 @@ public class TestTaxGUI extends AppCompatActivity {
                                                        });
                                                        AlertDialog alt9 =x8.create();
                                                        alt9.show();
-                                                       // Toast.makeText(getApplicationContext(), getString(R.string.tYearly) + aList.get(aList.size() - 1).annual(),
-                                                       // Toast.LENGTH_LONG).show();
                                                    } else {
                                                        Toast.makeText(getApplicationContext(), getString(R.string.tOptions),
                                                                Toast.LENGTH_LONG).show();
                                                    }
                                                }
-                                               AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(TestTaxGUI.this);
-                                               alertDialogBuilder.setMessage( "\n" + getString(R.string.tH) + hour + "\n" + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
-                                                       + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
-
-                                                   @Override
-                                                   public void onClick(DialogInterface dialog, int which) {
-                                                   }
-                                               })
-                                                       .setNegativeButton((getString(R.string.eCan)), null);
-                                               alertDialogBuilder.setTitle(getString(R.string.ti) );
-                                               AlertDialog alt =alertDialogBuilder.create();
-                                               alt.show();
                                                netTest = p.netpay();
                                            }
                                        }
