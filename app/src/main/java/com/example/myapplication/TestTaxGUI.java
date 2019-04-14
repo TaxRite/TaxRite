@@ -269,7 +269,7 @@ public class TestTaxGUI extends AppCompatActivity {
                                                }
                                                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(TestTaxGUI.this);
                                                alertDialogBuilder.setMessage( "\n" + getString(R.string.tH) + hour + "\n" + getString(R.string.tRate) + rate + "\n" + getString(R.string.tHea) + health + "\n" + getString(R.string.tUnion) + union + "\n"
-                                                       + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime).setPositiveButton("Go next", new DialogInterface.OnClickListener() {
+                                                       + getString(R.string.tTaxCredit) + taxcredit + "\n" + getString(R.string.tOver) + overtime).setPositiveButton((getString(R.string.gNext)), new DialogInterface.OnClickListener() {
 
                                                    @Override
 
