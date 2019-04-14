@@ -102,9 +102,9 @@ public class EntitlementsGUI  extends AppCompatActivity {
 		residency=(CheckBox)findViewById(R.id.ckbresidence);
 		checkentilements =(Button)findViewById(R.id.btnclick);
 		residency=(CheckBox)findViewById(R.id.ckbresidence);
-		nextpage=(Button)findViewById(R.id.next);
+
 		final Button checkentilements = (Button) findViewById(R.id.btnclick);
-		final Button nextpage = (Button) findViewById(R.id.next);
+
 
 		checkentilements.setOnClickListener(new View.OnClickListener() {
 												Tax p = new Tax();
