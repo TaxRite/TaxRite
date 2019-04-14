@@ -132,7 +132,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 															@Override
 															public void onClick(DialogInterface dialog, int which)
 															{
-																startActivity(new Intent(getApplicationContext(),EntitlementsGUI.class));
+																startActivity(new Intent(getApplicationContext(),RebateGUI.class));
 															}
 														});
 														AlertDialog alt1 =a.create();
@@ -147,7 +147,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 															@Override
 															public void onClick(DialogInterface dialog, int which)
 															{
-																startActivity(new Intent(getApplicationContext(),EntitlementsGUI.class));
+																startActivity(new Intent(getApplicationContext(),RebateGUI.class));
 															}
 														});
 														AlertDialog alt2 =a1.create();
@@ -161,7 +161,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 															@Override
 															public void onClick(DialogInterface dialog, int which)
 															{
-																startActivity(new Intent(getApplicationContext(),EntitlementsGUI.class));
+																startActivity(new Intent(getApplicationContext(),RebateGUI.class));
 															}
 														});
 														AlertDialog alt3 =a3.create();
@@ -176,7 +176,7 @@ public class EntitlementsGUI  extends AppCompatActivity {
 																@Override
 																public void onClick(DialogInterface dialog, int which)
 																{
-																	startActivity(new Intent(getApplicationContext(),EntitlementsGUI.class));
+																	startActivity(new Intent(getApplicationContext(),RebateGUI.class));
 																}
 															});
 															a4.setTitle(getString(R.string.mCard));
