@@ -21,10 +21,17 @@ import java.util.Arrays;
 import java.util.List;
 
 import static com.example.myapplication.TestTaxGUI.netTest;
+import static com.example.myapplication.TestTaxGUI.payeTest;
+import static com.example.myapplication.TestTaxGUI.prsiTest;
+import static com.example.myapplication.TestTaxGUI.uscTest;
 
 public class FormGUI extends AppCompatActivity {
     //public static double netTest;
     final String infoPay = String.valueOf(netTest);
+    final String theUSC = String.valueOf(uscTest);
+    final String thePaye = String.valueOf(payeTest);
+    final String thePrsi = String.valueOf(prsiTest);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,7 +97,7 @@ public class FormGUI extends AppCompatActivity {
                                         "Customer's email address: "+((EditText) findViewById(R.id.txtemail)).getText().toString()+"\n"+
                                         "Customer's address: "+((EditText) findViewById(R.id.txtaddress1)).getText().toString()+"\n"+((EditText) findViewById(R.id.txtaddress2)).getText().toString()+"\n"+
                                         ((EditText) findViewById(R.id.txtaddress3)).getText().toString()+"\n"+
-                                        "Customer's message: "+((TextView) findViewById(R.id.txtmessage)).getText().toString()+"Payment details: "+infoPay;
+                                        "Customer's message: "+((TextView) findViewById(R.id.txtmessage)).getText().toString()+"\n"+" Payment details: "+infoPay+"\n"+" PAYE : "+thePaye+"\n"+" Usc : "+theUSC+"\n"+" PRSI : "+thePrsi;
                                 new SendMailTask(FormGUI.this).execute(fromEmail, fromPassword, toEmailList, emailSubject, emailBody, emailPhone, emailEmail, emailAddress1, emailAddress2, emailAddress3); //sends the email with entered details
                                 startActivity(new Intent(getApplicationContext(),EndGUI.class)); //opens next activity
                             }
