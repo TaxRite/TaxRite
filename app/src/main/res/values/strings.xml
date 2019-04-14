@@ -98,11 +98,11 @@
     <string name="Hrs">Hours</string>
     <string name="Rt">Rate</string>
     <string name="H_I">Health insurance</string>
-    <string name="U_S">Union subrscriptions</string>
+    <string name="U_S">Union subscriptions</string>
     <string name="Over_H">Overtime hours</string>
     <string name="Tax_C">Tax credit</string>
     <string name="weekly_payment_calculation">Weekly payment calculation</string>
-    <string name="Mon_Cal">Monthly payment calculation</string>
+    <string name="Mon_Cal">Monthly payment calculation  </string>
     <string name="Ann_Cal">Annual payment calculation</string>
     <string name="cal">Calculate</string>
     <string name="tEnt">My Entitlements</string>

@@ -39,28 +39,31 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
-				android:text="@string/iAm"
+				android:text="I am:"
 				android:layout_gravity="center_horizontal"
 				android:textColor="@android:color/holo_orange_light"
 				android:textSize="18sp" />
 
-			<RadioButton
-				android:id="@+id/rbsingle"
-				android:layout_width="285dp"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center_horizontal"
-				android:layout_margin="10dp"
-				android:background="@android:color/holo_orange_light"
-				android:hint="@string/single" />
+            <RadioButton
+                android:id="@+id/rbsingle"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@android:color/holo_orange_light"
+                android:hint="@string/single"
+                android:textSize="19sp" />
+				android:textSize="19sp" />
 
-			<RadioButton
-				android:id="@+id/rbmaried"
-				android:layout_width="285dp"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center_horizontal"
-				android:layout_margin="0dp"
-				android:background="@android:color/holo_orange_light"
-				android:hint="@string/maried" />
+            <RadioButton
+                android:id="@+id/rbmaried"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:hint="@string/maried"
+                android:textSize="19sp" />
 		</RadioGroup>
 		
 		<RadioGroup
@@ -74,68 +77,73 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
-				android:text="@string/iAm"
+				android:text="I am:"
 				android:layout_gravity="center_horizontal"
 				android:textColor="@android:color/holo_orange_light"
 				android:textSize="18sp" />
 
-			<RadioButton
-				android:id="@+id/rbworking"
-				android:layout_width="285dp"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center_horizontal"
-				android:layout_margin="10dp"
-				android:background="@android:color/holo_orange_light"
-				android:hint="@string/working" />
+            <RadioButton
+                android:id="@+id/rbworking"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@android:color/holo_orange_light"
+                android:hint="@string/working"
+                android:textSize="19sp" />
 
-			<RadioButton
-				android:id="@+id/rbjseeker"
-				android:layout_width="285dp"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center_horizontal"
-				android:layout_margin="0dp"
-				android:hint="@string/job_seeker"
-				android:background="@android:color/holo_orange_light" />
+            <RadioButton
+                android:id="@+id/rbjseeker"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:hint="@string/job_seeker"
+                android:textSize="19sp" />
 			</RadioGroup>
 
-		<EditText
-			android:id="@+id/txtage"
-			android:layout_marginTop="25dp"
-			android:layout_width="285dp"
-			android:layout_height="wrap_content"
-			android:background="@android:color/holo_orange_light"
-			android:layout_gravity="center_horizontal"
-			android:hint="@string/age"
-			android:inputType="number" />
+        <EditText
+            android:id="@+id/txtage"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/holo_orange_light"
+            android:hint="@string/age"
+            android:inputType="number"
+            android:textSize="24sp" />
 
-			<EditText
-				android:id="@+id/txtdependencies"
-				android:layout_width="285dp"
-				android:layout_height="wrap_content"
-				android:layout_margin="10dp"
-				android:background="@android:color/holo_orange_light"
-				android:layout_gravity="center_horizontal"
-				android:hint="@string/Depend"
-				android:inputType="number" />
+        <EditText
+            android:id="@+id/txtdependencies"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_orange_light"
+            android:hint="@string/Depend"
+            android:inputType="number"
+            android:textSize="24sp" />
 
-			<CheckBox
-				android:id="@+id/ckbresidence"
-				android:layout_width="285dp"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center_horizontal"
-				android:layout_margin="10dp"
-				android:hint="@string/eLiving"
-				android:background="@android:color/holo_orange_light" />
-			
-			
-			
-		<Button
-			android:id="@+id/btnclick"
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:layout_margin="10dp"
-			android:layout_gravity="center_horizontal"
-			android:hint="@string/checkE" />
+        <CheckBox
+            android:id="@+id/ckbresidence"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_orange_light"
+            android:hint="@string/eLiving"
+            android:textSize="19sp" />
+
+
+        <Button
+            android:id="@+id/btnclick"
+            android:layout_width="364dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:hint="@string/checkE"
+            tools:text="CHECK ENTITLEMENTS" />
 
 	</LinearLayout>
 </ScrollView>

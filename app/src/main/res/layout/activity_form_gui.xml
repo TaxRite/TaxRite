@@ -29,7 +29,8 @@
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/name"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtsurname"
@@ -39,7 +40,8 @@
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/surname"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtaddress1"
@@ -49,7 +51,8 @@
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/add1"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtaddress2"
@@ -59,7 +62,8 @@
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/add2"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtaddress3"
@@ -69,7 +73,8 @@
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/add3"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtphone"
@@ -79,7 +84,8 @@
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/phone"
-            android:inputType="phone" />
+            android:inputType="phone"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtemail"
@@ -89,7 +95,8 @@
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtemail2"
@@ -99,7 +106,8 @@
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/confirm_email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtmessage"
@@ -109,14 +117,16 @@
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/msg"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btnsubmit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="@string/sub" />
+            android:text="@string/sub"
+            android:textSize="16sp" />
 
 
     </LinearLayout>

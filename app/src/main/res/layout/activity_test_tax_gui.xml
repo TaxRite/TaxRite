@@ -35,61 +35,67 @@
             android:id="@+id/TFhours"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/Hrs"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/TFrate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/Rt"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/TFhealth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/H_I"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/TFunion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/U_S"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/TFovertime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/Over_H"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/TFtaxcredit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@android:color/holo_orange_light"
             android:ems="10"
             android:hint="@string/Tax_C"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textSize="24sp" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -99,33 +105,36 @@
 
             <RadioButton
                 android:id="@+id/rbweekly"
-                android:layout_width="wrap_content"
+                android:layout_width="273dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_light"
-                android:text="@string/weekly_payment_calculation" />
+                android:text="@string/weekly_payment_calculation"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/rbmonthly"
-                android:layout_width="wrap_content"
+                android:layout_width="273dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_light"
-                android:text="@string/Mon_Cal" />
+                android:text="@string/Mon_Cal"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/rbannu"
-                android:layout_width="wrap_content"
+                android:layout_width="273dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_light"
-                android:text="@string/Ann_Cal" />
+                android:text="@string/Ann_Cal"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btncalculate"
