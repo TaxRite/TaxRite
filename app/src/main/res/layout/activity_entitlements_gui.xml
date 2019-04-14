@@ -136,12 +136,6 @@
 			android:layout_margin="10dp"
 			android:layout_gravity="center_horizontal"
 			android:hint="@string/checkE" />
-		<Button
-			android:id="@+id/next"
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:layout_margin="10dp"
-			android:layout_gravity="center_horizontal"
-			android:hint="Check Taxrebate"/>
+
 	</LinearLayout>
 </ScrollView>
