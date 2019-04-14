@@ -30,6 +30,10 @@ public class TestTaxGUI extends AppCompatActivity {
     ListView show;
     Double hour, rate, overtime, taxcredit, healthinsurance, unionsubs;
     public static double netTest=0.0;
+    public static double uscTest=0.0;
+    public static double payeTest=0.0;
+    public static double prsiTest=0.0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +71,8 @@ public class TestTaxGUI extends AppCompatActivity {
                                                p.setRate(rate);
                                                p.setTaxCredit(taxcredit);
                                                p.setOverTime(overtime);
+                                               p.setUnionSubs(union);
+                                               p.setHealthInsurance(health);
                                                aList.add(p);
                                                if (radWeek.isChecked()) {
                                                    if (Locale.getDefault().getLanguage().equals("en")) {
@@ -271,6 +277,9 @@ public class TestTaxGUI extends AppCompatActivity {
                                                    }
                                                }
                                                netTest = p.netpay();
+                                               uscTest = p.getUsc();
+                                               payeTest = p.getPaye();
+                                               prsiTest = p.getPRSI();
                                            }
                                        }
                                    }
