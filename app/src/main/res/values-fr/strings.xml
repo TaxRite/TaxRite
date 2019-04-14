@@ -67,6 +67,10 @@
     <string name="fCheck">Veuillez cocher tous les champs</string>
     <string name="fNotMatch">Email ne correspond pas!</string>
 
+    <!-- Form GUI Pop-Ups -->
+    <string name="fINet">S\'il vous plaît vérifier votre connexion Internet</string>
+    <string name="fInternet1">Il n\'y a pas de connexion Internet active. Vous ne pourrez pas soumettre vos coordonnées.</string>
+
     <!-- End GUI -->
     <string name="ThankYou">Je vous remercie. Un membre de notre équipe vous contactera sous peu pour vous donner une mise à jour de votre candidature. Merci d\'utiliser TaxRite!</string>
     <string name="exit">Sortie</string>
@@ -120,5 +124,6 @@
     <string name="cBen">Allocation familiale</string>
     <string name="SUSI">SUSI</string>
     <string name="rSup">Supplément de loyer</string>
+
 
 </resources>

@@ -51,7 +51,7 @@ public class FormGUI extends AppCompatActivity {
         }
         else {
             conn2int = false;
-            Toast.makeText(getApplicationContext(), ("There is no active internet connection. You won't be able to submit your details."),
+            Toast.makeText(getApplicationContext(), (getString(R.string.fInternet1)),
                     Toast.LENGTH_LONG).show();
         }
         buttonSubmit.setOnClickListener(
@@ -64,7 +64,7 @@ public class FormGUI extends AppCompatActivity {
                              Toast.LENGTH_LONG).show();
                         }
                         else if(conn2int!=true){//method for checking internet connection
-                            Toast.makeText(getApplicationContext(), "Please check your internet connection",
+                            Toast.makeText(getApplicationContext(), getString(R.string.fINet),
                                     Toast.LENGTH_LONG).show();
                         }
                         else{//method for forwarding details to email

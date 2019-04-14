@@ -69,6 +69,10 @@
     <string name="ThankYou">Gracias. Un miembro de nuestro equipo se pondrá en contacto con usted en breve para brindarle una actualización de su aplicación. ¡Gracias por usar TaxRite!</string>
     <string name="exit">Salida</string>
 
+    <!-- Form GUI Pop-Ups -->
+    <string name="fINet">Por favor revise su conexión a internet</string>
+    <string name="fInternet1">No hay conexión activa a internet. No podrás enviar tus datos.</string>
+
     <!-- Entitlement GUI -->
     <string name="entitelement">Les droits</string>
     <string name="single">Soltero</string>
@@ -118,6 +122,7 @@
     <string name="cBen">Beneficio infantil</string>
     <string name="SUSI">SUSI</string>
     <string name="rSup">Suplemento de alquiler</string>
+
 
 
 </resources>

@@ -149,6 +149,10 @@
     <string name="fCheck">Please check all fields</string>
     <string name="fNotMatch">Email does not match!</string>
 
+    <!-- Form GUI Pop-Ups -->
+    <string name="fINet">Please check your internet connection</string>
+    <string name="fInternet1">There is no active internet connection. You won\'t be able to submit your details.</string>
+
     <!-- End GUI -->
     <string name="ThankYou">Thank you. A member of our team will be in touch with you shortly to give you an update on your application. Thank you for using TaxRite!</string>
     <string name="exit">Exit</string>
